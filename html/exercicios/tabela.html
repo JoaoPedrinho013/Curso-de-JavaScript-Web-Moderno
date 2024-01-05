@@ -1,0 +1,58 @@
+<h1>Tabela</h1>
+
+<table style="text-align: center;">
+    <caption>Produtos</caption>
+    <thead><!--Cabecalho-->
+        <tr><!--linha-->
+            <th>Produto 1</th><!--coluna do thead-->
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody><!--corpo-->
+        <tr><!--linha-->
+            <td>iPad</td><!--coluna do tbody-->
+            <td>R$2000</td>
+            <td>3</td>
+            <td>R$6000</td>
+        </tr>
+        <tr><!--linha-->
+            <td>iPhone 15</td><!--coluna do tbody-->
+            <td>R$7000</td>
+            <td>4</td>
+            <td>R$28000</td>
+        </tr>
+    </tbody>
+    <tfoot><!--footer/ rodape-->
+        <tr><!--linha-->
+            <td colspan="3" rowspan="2">Total</td><!--Eu posso aplicar coslpan para ocupar mais de uma coluna e rowspan para cocupar mais de uma linha-->
+            <td>R$34000</td>
+        </tr>
+        <tr>
+            <td>7 Produtos</td>
+        </tr>
+    </tfoot>
+</table>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+
+    }
+    thead tr {
+        border-bottom: solid 3px lightgray;
+    }
+    tbody tr:hover {
+        background-color: lightgreen;
+        color: black;
+    }
+    tfoot {
+        background-color: rgb(144, 211, 253);
+        color: black;
+        font-weight: bold;
+    }
+</style>

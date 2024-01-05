@@ -1,0 +1,111 @@
+<div wm-slider>
+
+    <p class="img1">
+        <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg" alt="Muro da Cidade" width="513" height="342"
+            title="Muro da cidade po Tarso Bessa">
+    </p>
+
+    <p class="img2">
+        <img src="http://files.cod3r.com.br/curso-web/imagem2.gif" alt="Intro Cod3r" height="342">
+    </p>
+
+    <p class="circular">
+        <img src="http://files.cod3r.com.br/curso-web/imagem3.png" alt="Rio de Janeiro" height="342">
+    </p>
+    <p class="texto">
+        <img src="http://files.cod3r.com.br/curso-web/avatar.jpg" alt="Avatar" height="50" align="left">
+        Texto com imagem!!! Texto com imagem!!! Texto com imagem!!! Texto com imagem!!! imagem!!! <br>
+        Texto com imagem!!! Texto com imagem!!! Texto com imagem!!! Texto com imagem!!! Texto com imagem!!! <br>
+        Texto com imagem!!! Texto com imagem!!! Texto com imagem!!! Texto com imagem!!! Texto com imagem!!! <br>
+
+    </p>
+    <p class="cidade"></p>
+
+    <p class="img6">
+        <picture>
+            <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png" media="(min-width: 600px)">
+            <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" alt="Logo">
+        </picture>
+    </p>
+
+</div>
+
+<style>
+    p {
+        position: absolute;
+        display: none;
+    }
+
+    .circular {
+        width: 513;
+        background-color: black;
+    }
+
+    .texto {
+        width: 400px;
+    }
+
+    .texto img {
+        margin-right: 10px;
+    }
+
+    .cidade {
+        width: 513px;
+        height: 342px;
+        background-image: url('http://files.cod3r.com.br/curso-web/imagem4.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+</style>
+
+<script>
+    function mover(elem, inicio, fim, passo, callback) {
+        const novoInicio = inicio - passo
+        if (novoInicio >= fim) {
+            elem.style.left = novoInicio + 'px'
+            setTimeout(() => mover(elem, novoInicio, fim, passo, callback), 7)
+        } else {
+            callback()
+        }
+    }
+
+    function executarAnimacoes() {
+        const p = document.querySelector('.img1')
+        p.style.display = 'block'
+        mover(p, 1500, -550, 5, () => {
+            console.log('Terminou!!!')
+        })
+
+        const p1 = document.querySelector('.img2')
+        p1.style.display = 'block'
+        mover(p1, 3000, -610, 5, () => {
+            console.log('Terminou!!!')
+        })
+        const p2 = document.querySelector('.circular')
+        p2.style.display = 'block'
+        mover(p2, 4500, -550, 5, () => {
+            console.log('Terminou!!!')
+        })
+        const p3 = document.querySelector('.texto')
+        p3.style.display = 'block'
+        mover(p3, 6000, -550, 5, () => {
+            console.log('Terminou!!!')
+        })
+        const p4 = document.querySelector('.cidade')
+        p4.style.display = 'block'
+        mover(p4, 7500, -550, 5, () => {
+            console.log('Terminou!!!')
+        })
+        const p5 = document.querySelector('.img6')
+        p5.style.display = 'block'
+        mover(p5, 9000, -550, 5, () => {
+            console.log('Terminou!!!')
+        })
+    }
+
+    setInterval(executarAnimacoes, 16000); // Executa as animações a cada 9.5 segundos
+
+    // Execute as animações uma vez para iniciar
+    executarAnimacoes();
+</script>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu Feito Por Mim</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        html {
+            background: linear-gradient(to bottom, black, lightgray) no-repeat;
+            height: 100%;
+        }
+
+        .cabecalho {
+            display: flex;
+            background-color: rgba(46, 45, 45, 0.274);
+            border: solid 5px lightgreen;
+            height: 5em;
+            font-family: 'Oswald', cursive;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 670px) {
+            .menu-toggle {
+                display: block;
+                height: 2em;
+                background-color: cyan;
+                border: solid 1px red;
+                position: fixed;
+                right: 30px;
+                margin-top: 25px;
+            }
+
+            .menu-toggle:active {
+                border: none;
+            }
+
+            .menu {
+                display: none;
+            }
+        }
+        @media (max-width: 1140px){
+            aside {display: none;
+            }
+        }
+
+        .logo img {
+            height: 45px;
+            padding: 10px;
+
+        }
+
+        .botao {
+            font-size: 13px;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+        }
+
+        .destaque {
+            color: whitesmoke;
+            background: red;
+            box-shadow: 2px 2px 1px 1px #000;
+        }
+
+        .destaque:active {
+            box-shadow: none;
+        }
+
+        .menu a,
+        .login {
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .menu a:hover,
+        .login:hover {
+            background-color: lightgreen;
+            color: black;
+        }
+
+        .menu li {
+            display: inline-block;
+            padding-left: 80px;
+            padding-right: 30px;
+            padding-top: 10px;
+        }
+
+        aside {
+            padding-top: 25px;
+            position: fixed;
+            right: 40px;
+
+        }
+
+        .menu a.destaque {
+            color: black;
+            background-color: lightgreen;
+            border-radius: 5px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio" class="logo1">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
+            </a>
+        </div>
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="autenticacao">
+            <a href="#login" class="login">Login</a>
+            <a href="#registar" class="botao destaque">Registrar</a>
+        </aside>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obtém todos os links do menu
+            var linksMenu = document.querySelectorAll('.menu a');
+
+            // Função para verificar a página atual e destacar o link correspondente
+            function destacarLinkAtual() {
+                var paginaAtual = window.location.hash;
+
+                // Remove a classe 'destaque' de todos os links do menu
+                linksMenu.forEach(function (link) {
+                    link.classList.remove('destaque');
+                });
+
+                // Adiciona a classe 'destaque' ao link correspondente à página atual
+                var linkAtual = document.querySelector('.menu a[href="' + paginaAtual + '"]');
+                if (linkAtual) {
+                    linkAtual.classList.add('destaque');
+                }
+            }
+
+            // Chama a função quando a página é carregada e sempre que a hash da URL é alterada
+            destacarLinkAtual();
+            window.addEventListener('hashchange', destacarLinkAtual);
+        });
+    </script>
+
+
+</body>
+
+</html>

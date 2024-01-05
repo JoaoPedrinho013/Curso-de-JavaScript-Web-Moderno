@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades #02</title>
+    <style>
+        body {
+            background: linear-gradient(to right, black, lightgray);
+            color: whitesmoke;
+        }
+        .fora {
+            position: relative;
+            background-color: lightgreen;
+            height: 400px;
+            width: 400px;
+            padding: 50px;
+        }
+        .dentro {
+            background-color: lightskyblue;
+            height: 100px;
+            width: 100%;
+            position: static; /*conteudo*/
+            position: relative;/*conteudo*/
+            position: absolute;/*conteudo + padding*/
+            /*position: fixed;*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="fora">
+        <div class="dentro"></div>
+    </div>
+</body>
+</html>
