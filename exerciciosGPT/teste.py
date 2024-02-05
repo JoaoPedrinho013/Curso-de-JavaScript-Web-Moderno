@@ -1,16 +1,13 @@
-def numeros_primos_ate(n):
-    primos = []
-    for num in range(2, n + 1):
-        eh_primo = True
-        for i in range(2, int(num**0.5) + 1):
-            if num % i == 0:
-                eh_primo = False
-                break
-        if eh_primo:
-            primos.append(num)
-    return primos
 
-# Exemplo de uso:
-limite_superior = 20
-lista_primos = numeros_primos_ate(limite_superior)
-print(f"Números primos até {limite_superior}: {lista_primos}")
+def is_numero_triangular(numero):
+    # Encontrar a solução da equação quadrática n^2 + n - 2 * numero = 0
+    delta = 1 + 8 * numero
+    raiz_delta = int(delta ** 0.5)
+
+    # Verificar se a raiz do delta é um número inteiro e se a solução é positiva
+    return raiz_delta ** 2 == delta and (raiz_delta - 1) % 2 == 0
+
+# Exemplo de uso
+numero_teste = 10
+resultado = is_numero_triangular(numero_teste)
+print(f"O número {numero_teste} é triangular? {resultado}")
