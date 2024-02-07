@@ -100,3 +100,4 @@ ________________________________________________________________________________
 49. Escreva uma função arrow que receba um objeto com informações de um livro (título, autor, páginas) e retorne o número de páginas por palavra no título.
 
 50. Crie uma arrow function que receba um array de números e retorne um novo array com o dobro de cada elemento.
+__________________________________________________________________________________________________________________________________________________________________________________________________
