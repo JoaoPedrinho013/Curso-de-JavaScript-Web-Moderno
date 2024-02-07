@@ -1,39 +1,102 @@
-1 Crie uma arrow function que receba dois números e retorne a soma deles.
-2 Crie uma arrow function que calcule e retorne o dobro de um número.
-3 Escreva uma arrow function que receba três números como parâmetros e retorne a média deles.
-4 Desenvolva uma arrow function que calcule e retorne o quadrado de um número.
-5 Crie uma função arrow que receba um número e verifique se ele é par. Retorne true se for par, false se for ímpar.
-6 Escreva uma arrow function que receba um valor em reais e retorne o equivalente em dólares, considerando uma taxa de câmbio fixa.
-7 Desenvolva uma função que receba dois números e retorne o maior deles.
-8 Crie uma arrow function que calcule e retorne o fatorial de um número.
-9 Escreva uma função arrow que receba um número e retorne true se ele for positivo e false se for negativo.
-10 Desenvolva uma arrow function que receba dois valores e retorne o resto da divisão do primeiro pelo segundo.
-11 Crie uma função arrow que receba um array de números e retorne o menor número.
-12 Desenvolva uma arrow function que receba um número inteiro e retorne true se ele for primo, false caso contrário.
-13 Escreva uma função que receba uma string e retorne o número de caracteres presentes nela.
-14 Crie uma arrow function que receba dois arrays e retorne um novo array que contenha os elementos em comum entre os dois arrays.
-15 Desenvolva uma função que receba uma string e retorne a mesma string, mas com todas as vogais substituídas por '*'.
-16 Escreva uma arrow function que receba um objeto com informações de uma pessoa (nome, idade, sexo) e retorne uma string no formato "Nome: [nome], Idade: [idade], Sexo: [sexo]".
-17 Crie uma função arrow que receba um número e retorne uma string indicando se é positivo, negativo ou zero.
-18 Desenvolva uma arrow function que receba uma temperatura em Celsius e retorne a temperatura equivalente em Fahrenheit.
-19 Escreva uma função que receba um array de números e retorne um novo array contendo apenas os números pares.
-20 Crie uma arrow function que receba um número e retorne um array com todos os números primos até o número informado.
-21 Crie uma arrow function que receba uma frase e retorne a mesma frase, mas com cada palavra invertida.
-22 Desenvolva uma função que receba um array de números e retorne a soma de todos os números positivos.
-23 Escreva uma arrow function que receba um número e retorne true se ele for um número triangular, false caso contrário. (Um número triangular é um número que pode ser representado na forma de um triângulo equilátero.)
-24 Crie uma função arrow que receba um array de strings e retorne o total de caracteres dessas strings.
-25 Desenvolva uma arrow function que receba um número e retorne a soma dos seus dígitos.
-26 Escreva uma função que receba um número e retorne um array com todos os seus divisores.
-27 Crie uma arrow function que receba dois objetos como parâmetros e retorne um novo objeto com as propriedades dos dois objetos combinadas.
-28 Desenvolva uma função que receba um array de números e retorne um novo array com os números ordenados de forma decrescente.
-29 Escreva uma arrow function que receba um número e retorne true se ele for um quadrado perfeito, false caso contrário.
-30 Crie uma função arrow que receba uma string e retorne a mesma string, mas com todas as letras maiúsculas transformadas em minúsculas e vice-versa.
-EXEMPLO:
+EXERCICIOS DE ARROW FUNCTION =>
+__________________________________________________________________________________________________________________________________________________________________________________________________
 
-const operacoesMatematicas = (valor1, valor2) => {
-}
-operacoesMatematicas(10, 5)
+1. Crie uma arrow function que receba dois números e retorne a soma deles.
 
+2. Crie uma arrow function que calcule e retorne o dobro de um número.
 
+3. Escreva uma arrow function que receba três números como parâmetros e retorne a média deles.
 
+4. Desenvolva uma arrow function que calcule e retorne o quadrado de um número.
 
+5. Crie uma função arrow que receba um número e verifique se ele é par. Retorne true se for par, false se for ímpar.
+
+6. Escreva uma arrow function que receba um valor em reais e retorne o equivalente em dólares, considerando uma taxa de câmbio fixa.
+
+7. Desenvolva uma função que receba dois números e retorne o maior deles.
+
+8. Crie uma arrow function que calcule e retorne o fatorial de um número.
+
+9. Escreva uma função arrow que receba um número e retorne true se ele for positivo e false se for negativo.
+
+10. Desenvolva uma arrow function que receba dois valores e retorne o resto da divisão do primeiro pelo segundo.
+
+11. Crie uma função arrow que receba um array de números e retorne o menor número.
+
+12. Desenvolva uma arrow function que receba um número inteiro e retorne true se ele for primo, false caso contrário.
+
+13. Escreva uma função que receba uma string e retorne o número de caracteres presentes nela.
+
+14. Crie uma arrow function que receba dois arrays e retorne um novo array que contenha os elementos em comum entre os dois arrays.
+
+15. Desenvolva uma função que receba uma string e retorne a mesma string, mas com todas as vogais substituídas por '*'.
+
+16. Escreva uma arrow function que receba um objeto com informações de uma pessoa (nome, idade, sexo) e retorne uma string no formato "Nome: [nome], Idade: [idade], Sexo: [sexo]".
+
+17. Crie uma função arrow que receba um número e retorne uma string indicando se é positivo, negativo ou zero.
+
+18. Desenvolva uma arrow function que receba uma temperatura em Celsius e retorne a temperatura equivalente em Fahrenheit.
+
+19. Escreva uma função que receba um array de números e retorne um novo array contendo apenas os números pares.
+
+20. Crie uma arrow function que receba um número e retorne um array com todos os números primos até o número informado.
+
+21. Crie uma arrow function que receba uma frase e retorne a mesma frase, mas com cada palavra invertida.
+
+22. Desenvolva uma função que receba um array de números e retorne a soma de todos os números positivos.
+
+23. Escreva uma arrow function que receba um número e retorne true se ele for um número triangular, false caso contrário. (Um número triangular é um número que pode ser representado na forma de um triângulo equilátero.)
+
+24. Crie uma função arrow que receba um array de strings e retorne o total de caracteres dessas strings.
+
+25. Desenvolva uma arrow function que receba um número e retorne a soma dos seus dígitos.
+
+26. Escreva uma função que receba um número e retorne um array com todos os seus divisores.
+
+27. Crie uma arrow function que receba dois objetos como parâmetros e retorne um novo objeto com as propriedades dos dois objetos combinadas.
+
+28. Desenvolva uma função que receba um array de números e retorne um novo array com os números ordenados de forma decrescente.
+
+29. Escreva uma arrow function que receba um número e retorne true se ele for um quadrado perfeito, false caso contrário.
+
+30. Crie uma função arrow que receba uma string e retorne a mesma string, mas com todas as letras maiúsculas transformadas em minúsculas e vice-versa.
+
+31. Escreva uma função que receba dois números e retorne o mínimo múltiplo comum (MMC) entre eles.
+
+32. Crie uma arrow function que receba um array de números e retorne a soma de todos os elementos.
+
+33. Desenvolva uma função que receba um número e retorne true se ele for um número perfeito, false caso contrário. (Um número perfeito é aquele que é igual à soma de seus divisores próprios.)
+
+34. Escreva uma arrow function que receba um objeto com informações de um produto (nome, preço, quantidade) e retorne o valor total desse produto (preço * quantidade).
+
+35. Crie uma função arrow que receba uma string e retorne o número de palavras presentes nela.
+
+36. Desenvolva uma função que receba um número e retorne true se ele for um número de Armstrong, false caso contrário. (Um número de Armstrong é aquele que é igual à soma das potências de seus dígitos.)
+
+37. Escreva uma arrow function que receba um array de strings e retorne um novo array com todas as strings em letras maiúsculas.
+
+38. Crie uma arrow function que receba um número e retorne a sequência de Fibonacci até esse número.
+
+39. Desenvolva uma função que receba dois números e retorne o máximo divisor comum (MDC) entre eles.
+
+40. Escreva uma função arrow que receba um objeto com informações de um estudante (nome, idade, notas) e retorne a média das notas.
+
+41. Crie uma arrow function que receba um array de números e retorne um novo array com os elementos únicos (sem repetição).
+
+42. Desenvolva uma função que receba um número e retorne true se ele for um número feliz, false caso contrário. (Um número feliz é aquele que, ao substituir o número pela soma dos quadrados de seus dígitos repetidamente, resulta em 1.)
+
+43. Escreva uma arrow function que receba um array de números e retorne a soma dos quadrados desses números.
+
+44. Crie uma arrow function que receba um objeto com informações de uma empresa (nome, faturamento, despesas) e retorne o lucro líquido (faturamento - despesas).
+
+45. Desenvolva uma função que receba um número e retorne true se ele for um número de Lucas, false caso contrário. (Os números de Lucas formam uma sequência semelhante à de Fibonacci.)
+
+46. Escreva uma arrow function que receba um array de strings e retorne o maior comprimento entre elas.
+
+47. Crie uma arrow function que receba um número e retorne um array com todos os divisores desse número.
+
+48. Desenvolva uma função que receba um número e retorne true se ele for um número feliz no sistema binário, false caso contrário.
+
+49. Escreva uma função arrow que receba um objeto com informações de um livro (título, autor, páginas) e retorne o número de páginas por palavra no título.
+
+50. Crie uma arrow function que receba um array de números e retorne um novo array com o dobro de cada elemento.
