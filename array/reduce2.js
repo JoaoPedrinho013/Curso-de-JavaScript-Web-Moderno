@@ -23,3 +23,11 @@ console.log(algumBolsista)
 
 const bolsistas = alunos.filter(aluno => aluno.bolsista).map(aluno => aluno.nome)
 console.log(bolsistas)
+
+// Desafio 1 Professor: Todos os alunos são bolsisrta?
+const todosbolsistas = (resultado, bolsista) => resultado && bolsista
+console.log(alunos.map(a => a.bolsista).reduce(todosbolsistas))
+
+// Desafio 2 Professor: Algum aluno é bolsista?
+const algumBolsista2 = (resultado, bolsista) => resultado || bolsista
+console.log(alunos.map(a => a.bolsista).reduce(algumBolsista2))
