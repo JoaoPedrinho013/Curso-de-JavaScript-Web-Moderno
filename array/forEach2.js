@@ -24,6 +24,6 @@ Array.prototype.forEach2 = function (callback) {
 
 const aprovados = ['Pedro', 'Richard', 'Caio', 'Carlos']
 
-aprovados.forEach(function (nome, indice) {
+aprovados.forEach2(function (nome, indice) {
     console.log(`${indice + 1}) ${nome}`)
 })
