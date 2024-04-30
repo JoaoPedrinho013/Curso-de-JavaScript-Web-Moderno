@@ -19,7 +19,17 @@
             { nome: 'Carlos', nota: 7.6 },
             { nome: 'Julia', nota: 9.7 }
         ]
-        
-        // ...
+
+        $('div[id]').append('<table></table>')
+        $('table').append('<tr><th>Nome</th><th>Nota</th></tr>')
+
+        for (pessoa in pessoas) {
+            $('table').append(`<tr><td>${pessoas[pessoa].nome}</td><td>${pessoas[pessoa].nota}</td></tr>`)
+        }
+
+        /* $('table').append('<tr><td>Ana</td><td>9.1</td></tr>')
+         $('table').append('<tr><td>Bianca</td><td>8.4</td></tr>')
+         $('table').append('<tr><td>Carlos</td><td>7.6</td></tr>')
+         $('table').append('<tr><td>Julia</td><td>9.7</td></tr>')*/
     </script>
 </body>
