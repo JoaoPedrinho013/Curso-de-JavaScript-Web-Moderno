@@ -1,0 +1,130 @@
+1- Crie um arquivo calculadora.js que exporta funções básicas como soma, subtrai, multiplica, e divide.
+Em outro arquivo, importe essas funções e use-as para realizar operações matemáticas.
+Módulo de conversão de temperatura:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+2- Crie um arquivo conversor.js que exporta funções para converter temperaturas entre Celsius, Fahrenheit e Kelvin.
+Implemente a função converterParaFahrenheit, converterParaCelsius, e converterParaKelvin.
+Importe essas funções em outro arquivo e faça conversões.
+Classe de Pessoa usando this:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+3- Crie um arquivo pessoa.js que define uma classe Pessoa com propriedades como nome e idade.
+A classe deve ter um método saudar que usa this para acessar o nome da pessoa.
+Exporte a classe e use-a em outro arquivo para criar e saudar uma pessoa.
+Módulo de operações com arrays:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+4- Crie um arquivo operacoesArray.js que exporta funções para manipular arrays, como adicionarElemento, removerElemento, e buscarElemento.
+Importe e use essas funções em um outro arquivo.
+Contador de instâncias com this e module.exports:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+5- Crie um arquivo contador.js que define uma classe Contador com um método incrementar.
+Utilize this para rastrear o número de instâncias da classe criadas.
+Importe e use a classe em outro arquivo para testar o contador.
+Módulo de autenticação:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+6- Crie um arquivo auth.js que exporta funções como login e logout.
+A função login deve aceitar um objeto Usuario e usar this para acessar métodos de verificação.
+Importe o módulo e use as funções em um outro arquivo.
+Criação de um jogo simples com classes e módulos:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+7- Crie um arquivo jogo.js que define classes como Jogador, Inimigo, e Jogo.
+Use this para acessar propriedades e métodos dentro das classes.
+Exporte as classes e crie um jogo em outro arquivo.
+Sistema de tarefas (todo):
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+8- Crie um arquivo tarefa.js que define uma classe Tarefa com métodos para adicionar, remover e listar tarefas.
+Use module.exports para exportar a classe e this para acessar tarefas.
+Implemente o sistema de tarefas em um outro arquivo.
+Manipulação de strings com módulos:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+9- Crie um arquivo manipulaString.js que exporta funções para manipular strings, como reverterString, capitalizar, e contarVogais.
+Importe e use essas funções em outro arquivo.
+Criar uma API simulada com funções:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+10- Crie um arquivo api.js que define funções como get, post, put, e delete usando exports.
+Implemente a lógica básica de cada função, como se estivesse interagindo com uma API.
+Importe essas funções em outro arquivo e simule requisições.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------COM LODASH-----------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+1- Crie um arquivo numeros.js que exporta uma função filtrarEOrdenar que usa o lodash para filtrar números maiores que um valor específico e depois ordená-los.
+Importe e use essa função em outro arquivo, fornecendo uma lista de números.
+Manipulação de Strings com Lodash:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+2- Crie um arquivo manipulaStrings.js que exporta funções como capitalizar, camelCase, e kebabCase usando métodos do lodash.
+Importe essas funções em outro arquivo e aplique-as em diferentes strings.
+Agrupamento de Objetos:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+3- Crie um arquivo agrupamento.js que exporta uma função agruparPorCategoria que usa o lodash para agrupar objetos de um array com base em uma propriedade, como categoria.
+Em outro arquivo, crie um array de objetos e use a função para agrupá-los.
+Contagem de Elementos em um Array:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+4- Crie um arquivo contador.js que exporta uma função contarElementos que usa o lodash para contar quantas vezes cada elemento aparece em um array.
+Importe e use essa função em outro arquivo para contar elementos em diferentes arrays.
+Remoção de Duplicados em um Array:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+5- Crie um arquivo removerDuplicados.js que exporta uma função removerDuplicados que usa o lodash para remover duplicados de um array.
+Importe essa função em outro arquivo e teste-a com diferentes arrays.
+Classe de Pessoa com this e Lodash:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+6- Crie um arquivo pessoa.js que define uma classe Pessoa com métodos como saudar e obterIniciais, onde this é usado para acessar as propriedades da pessoa, e o lodash é usado para manipular strings (por exemplo, para obter iniciais).
+Exporte a classe e use-a em outro arquivo para criar uma pessoa e utilizar seus métodos.
+Módulo de Análise de Texto:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+7- Crie um arquivo analiseTexto.js que exporta funções como contarPalavras, contarCaracteres, e encontrarPalavraMaisLonga usando o lodash.
+Importe e use essas funções em outro arquivo para analisar textos diferentes.
+Combinação de Arrays:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+8- Crie um arquivo combinarArrays.js que exporta uma função combinarArraysSemDuplicados que usa o lodash para combinar dois arrays removendo duplicados.
+Importe essa função em outro arquivo e teste-a com diferentes arrays.
+Verificação de Propriedades em Objetos:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+9- Crie um arquivo verificarPropriedades.js que exporta uma função verificarPropriedadeEmObjetos que usa o lodash para verificar se uma determinada propriedade existe em todos os objetos de um array.
+Importe essa função em outro arquivo e teste-a com diferentes objetos.
+Módulo de Processamento de Dados:
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+10- Crie um arquivo processamentoDados.js que exporta uma função processarDados que usa o lodash para executar uma série de operações em um array de objetos, como ordenar, agrupar, e filtrar.
+Importe e use essa função em outro arquivo para processar dados complexos.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
