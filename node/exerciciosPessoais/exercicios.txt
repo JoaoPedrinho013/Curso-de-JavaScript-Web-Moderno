@@ -72,55 +72,53 @@ Importe essas funções em outro arquivo e simule requisições.
 
 1- Crie um arquivo numeros.js que exporta uma função filtrarEOrdenar que usa o lodash para filtrar números maiores que um valor específico e depois ordená-los.
 Importe e use essa função em outro arquivo, fornecendo uma lista de números.
-Manipulação de Strings com Lodash:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 2- Crie um arquivo manipulaStrings.js que exporta funções como capitalizar, camelCase, e kebabCase usando métodos do lodash.
 Importe essas funções em outro arquivo e aplique-as em diferentes strings.
-Agrupamento de Objetos:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 3- Crie um arquivo agrupamento.js que exporta uma função agruparPorCategoria que usa o lodash para agrupar objetos de um array com base em uma propriedade, como categoria.
 Em outro arquivo, crie um array de objetos e use a função para agrupá-los.
-Contagem de Elementos em um Array:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 4- Crie um arquivo contador.js que exporta uma função contarElementos que usa o lodash para contar quantas vezes cada elemento aparece em um array.
 Importe e use essa função em outro arquivo para contar elementos em diferentes arrays.
-Remoção de Duplicados em um Array:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 5- Crie um arquivo removerDuplicados.js que exporta uma função removerDuplicados que usa o lodash para remover duplicados de um array.
 Importe essa função em outro arquivo e teste-a com diferentes arrays.
-Classe de Pessoa com this e Lodash:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 6- Crie um arquivo pessoa.js que define uma classe Pessoa com métodos como saudar e obterIniciais, onde this é usado para acessar as propriedades da pessoa, e o lodash é usado para manipular strings (por exemplo, para obter iniciais).
 Exporte a classe e use-a em outro arquivo para criar uma pessoa e utilizar seus métodos.
-Módulo de Análise de Texto:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 7- Crie um arquivo analiseTexto.js que exporta funções como contarPalavras, contarCaracteres, e encontrarPalavraMaisLonga usando o lodash.
 Importe e use essas funções em outro arquivo para analisar textos diferentes.
-Combinação de Arrays:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 8- Crie um arquivo combinarArrays.js que exporta uma função combinarArraysSemDuplicados que usa o lodash para combinar dois arrays removendo duplicados.
 Importe essa função em outro arquivo e teste-a com diferentes arrays.
-Verificação de Propriedades em Objetos:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 9- Crie um arquivo verificarPropriedades.js que exporta uma função verificarPropriedadeEmObjetos que usa o lodash para verificar se uma determinada propriedade existe em todos os objetos de um array.
 Importe essa função em outro arquivo e teste-a com diferentes objetos.
-Módulo de Processamento de Dados:
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
