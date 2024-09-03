@@ -1,0 +1,59 @@
+1-- Criação da Tabela pokemons:
+Crie uma tabela chamada pokemons com as colunas id, nome, tipo1, tipo2, altura, peso, e geracao.
+
+2-- Criação da Tabela tipos:
+Crie uma tabela chamada tipos para armazenar os diferentes tipos de Pokémon (ex.: fogo, água, grama). A tabela deve ter as colunas id e nome.
+
+3-- Relacionamento pokemons-tipos:
+Altere a tabela pokemons para que as colunas tipo1 e tipo2 sejam chaves estrangeiras que referenciem a tabela tipos.
+
+4-- Tabela regioes:
+Crie uma tabela regioes com colunas para id e nome (ex.: Kanto, Johto). Cada região pode ter múltiplas gerações.
+
+5-- Tabela geracoes:
+Crie uma tabela geracoes com as colunas id, numero, e regiao_id, onde regiao_id é uma chave estrangeira referenciando a tabela regioes.
+
+6-- Relacionamento pokemons-geracoes:
+Altere a tabela pokemons para incluir uma coluna geracao_id, como chave estrangeira para a tabela geracoes.
+
+7-- Inserção de Tipos:
+Insira pelo menos 18 tipos na tabela tipos, representando os tipos de Pokémon.
+
+8-- Inserção de Regiões:
+Insira dados para pelo menos 8 regiões (ex.: Kanto, Johto, Hoenn) na tabela regioes.
+
+9-- Inserção de Gerações:
+Insira dados na tabela geracoes, associando cada geração à sua região correspondente.
+
+10-- Inserção de Pokémon (Parte 1):
+Insira pelo menos 50 pokémons na tabela pokemons, especificando seus tipos, altura, peso, e geração.
+
+11-- Inserção de Pokémon (Parte 2):
+Insira mais 50 pokémons, assegurando que você tenha pokémons de pelo menos três gerações diferentes.
+
+12-- Busca por Tipos:
+Faça uma consulta para retornar todos os pokémons do tipo Fogo (tipo1 ou tipo2).
+
+13-- Pokémons por Geração:
+Faça uma consulta que mostre quantos pokémons existem em cada geração.
+
+14-- Pokémons por Região:
+Crie uma consulta que mostre o número de pokémons por região (através da relação com gerações).
+
+15-- Pokémons com Dois Tipos:
+Faça uma consulta para encontrar todos os pokémons que têm dois tipos (ou seja, onde tipo2 não é NULL).
+
+16-- Pokémons Mais Pesados:
+Crie uma consulta para listar os 10 pokémons mais pesados.
+
+17-- Pokémons Mais Altos:
+Crie uma consulta para listar os 10 pokémons mais altos.
+
+18-- Pokémons de uma Região Específica:
+Crie uma consulta que retorne todos os pokémons que pertencem à região de Johto.
+
+19-- Pokémons por Tipo e Geração:
+Faça uma consulta que conte quantos pokémons do tipo Elétrico existem em cada geração.
+
+20-- Inserção de Pokémon (Parte 3):
+Continue inserindo pokémons até alcançar um total de 300 pokémons. Certifique-se de que todas as gerações estejam representadas.

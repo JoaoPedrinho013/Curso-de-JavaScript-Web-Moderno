@@ -1,0 +1,224 @@
+create table if not exists cidades (
+    id int unsigned not null auto_increment,
+    nome varchar(255) not null, 
+    estado_id int unsigned not null,
+    area decimal(10,2),
+    primary key (id),
+    foreign key (estado_id) REFERENCES estados(id)
+);
+
+create table if not exists empresas (
+    id int unsigned not null auto_increment,
+    nome varchar(255) not null,
+    cnpj int unsigned,
+    primary key (id),
+    unique key (cnpj)
+);
+
+
+-- cidades_empresas
+create table if not exists empresas_unidades (
+    empresa_id int unsigned not null,
+    cidade_id int unsigned not null,
+    sede tinyint(1) not null,
+    primary key (empresa_id, cidade_id)
+
+);
+
+create table estados (
+    id  INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(45) NOT NULL,
+    sigla VARCHAR(2) NOT NULL,
+    regiao ENUM('Norte', 'Nordeste', 'Centro-Oeste', 'Sudeste', 'Sul') NOT NULL,
+    populacao DECIMAL(5,2) NOT NULL,
+    PRIMARY KEY (id), 
+    UNIQUE KEY (nome),
+    UNIQUE KEY (sigla)
+);
+
+create table if not exists prefeitos (
+    id int unsigned not null auto_increment,
+    nome VARCHAR(255) not null,
+    cidade_id int unsigned,
+    primary key (id),
+    unique key (cidade_id),
+    foreign key (cidade_id) references cidades (id)
+);
+
+
+-- inserir 
+
+
+select * from estados where id = 25
+select * from cidades
+
+insert into cidades( nome, area, estado_id)
+values ('Campinas', 795, 25)
+
+insert into cidades( nome, area, estado_id)
+values ('Niterói', 133.9, 19);
+
+insert into cidades( nome, area, estado_id)
+values ('Caruaru', 920.6, (select id from estados where sigla = 'PE'));
+
+
+insert into cidades (nome, area, estado_id)
+values ('Juazeiro do Norte', 248.2,(select id from estados where sigla = 'CE'))
+
+select * from cidades
+
+insert into estados(nome, sigla, regiao, populacao)
+values ('Acre', 'AC', 'Norte', 0.83);
+
+insert into estados
+    (nome, sigla, regiao, populacao)
+values
+    ('Alagoas', 'AL', 'Nordeste', 3.38),
+    ('Amapá', 'AP', 'Nordeste', 3.38),
+    ('Amazonas', 'AM', 'Norte', 4.06);
+
+
+-- Mais estados
+INSERT INTO estados
+    (nome, sigla, regiao, populacao)
+VALUES
+    ('Bahia', 'BA', 'Nordeste', 15.34),
+    ('Ceará', 'CE', 'Nordeste', 9.02),
+    ('Distrito Federal', 'DF', 'Centro-Oeste', 3.04),
+    ('Espírito Santo', 'ES', 'Sudeste', 4.02),
+    ('Goiás', 'GO', 'Centro-Oeste', 6.78),
+    ('Maranhao', 'MA', 'Nordeste', 7.00),
+    ('Mato Grosso', 'MT', 'Centro-Oeste', 3.34),
+    ('Mato Grosso do Sul', 'MS', 'Centro-Oeste', 2.71),
+    ('Minas Gerais', 'MG', 'Sudeste', 21.12),
+    ('Pará', 'PA', 'Norte', 8.36),
+    ('Paraíba', 'PB', 'Nordeste', 4.03),
+    ('Parana', 'PR', 'Sul', 11.22),
+    ('Pernambuco', 'PE', 'Nordeste', 9.47),
+    ('Piauí', 'PI', 'Nordeste', 3.22),
+    ('Rio de Janeiro', 'RJ', 'Sudeste', 16.72),
+    ('Rio Grande do Norte', 'RN', 'Nordeste', 3.51),
+    ('Rio Grande do Sul', 'RS', 'Sul', 11.32),
+    ('Rondônia', 'RO', 'Norte', 1.81),
+    ('Roraima', 'RR', 'Norte', 0.52),
+    ('Santa Catarina', 'SC', 'Sul', 7.01),
+    ('São Paulo', 'SP', 'Sudeste', 45.10),
+    ('Sergipe', 'SE', 'Nordeste', 2.29),
+    ('Tocantins', 'TO', 'Norte', 1.55);
+
+
+
+insert into `estados` (id, nome, sigla, regiao, populacao)
+values (1000, 'Novo', 'NV', 'Sul', 2.54)
+
+select * from `estados`
+
+insert into `estados` (nome, sigla, regiao, populacao)
+values ('Mais Novo', 'MN', 'Norte', 2.51)
+
+select * from `estados`
+
+insert into `estados` (id, nome, sigla, regiao, populacao)
+values (33, 'Teste', 'TT', 'Sul', 2.52)
+
+select * from `estados`
+
+select * from `cidades`
+
+insert into prefeitos (nome, cidade_id)
+values ('Rodrigo Neves', 2), ('Raquel Lyra', 3), ('Zenaldo Coutinho', null);
+
+select * from `prefeitos`
+
+insert into prefeitos (nome, cidade_id)
+values ('Rafael Greca', null);
+
+insert into prefeitos (nome, cidade_id)
+values ('Rodrigo Pinheiro', 3);
+
+alter table empresas modify cnpj varchar(14)
+
+insert into empresas (nome , cnpj)
+values ('Bradesco', 93475643756854), ('Vale', 28345673456295), ('Cielo', 09574658236543);
+
+desc empresas;
+desc `prefeitos`;
+select * from empresas;
+select * from cidades;
+select * from empresas_unidades
+
+insert into empresas_unidades ( empresa_id, cidade_id, sede)
+values (1, 1, 1), (1, 2, 0), (2, 1, 0), (2, 2, 1);
+
+select regiao as 'Região', sum(populacao) as Total from `estados`-- sum soma todas populacao
+GROUP BY regiao
+order by Total desc
+
+select avg(populacao) as Total from `estados` -- avg faz a media, pega todas populacao e soma e dps divide com a quantidade de estados/linhas
+
+select 
+    estados.nome as Estado,
+    cidades.nome as Cidade,
+    regiao as Região
+from estados, cidades where `estados`.id = `cidades`.estado_id;
+
+
+select 
+    estados.nome as Estado,
+    cidades.nome as Cidade,
+    regiao as Região
+from estados inner join cidades on `estados`.id = `cidades`.estado_id;
+
+
+select * from prefeitos;
+select * from cidades;
+
+select * from cidades inner join prefeitos on cidades.id = prefeitos.cidade_id;
+
+select * from cidades left outer join prefeitos on cidades.id = prefeitos.cidade_id;
+
+select * from cidades right join prefeitos on cidades.id = prefeitos.cidade_id;
+
+--select * from cidades full join prefeitos on cidades.id = prefeitos.cidade_id;
+
+
+select * from cidades left outer join prefeitos on cidades.id = prefeitos.cidade_id
+union
+select * from cidades right join prefeitos on cidades.id = prefeitos.cidade_id;
+
+select e.nome Empresa, c.nome as Cidade
+from empresas e, empresas_unidades eu, cidades c
+where e.id = eu.empresa_id
+and c.id = eu.cidade_id
+and sede
+
+select * from estados -- Aqui mostra todas(*) colunas
+
+select sigla, nome as 'Nome do Estado' from estados -- "as" = "como/apelido"
+where regiao = 'Sul' -- 'where' = "onde" // se rodar os 2 juntos so mostra as siglas e os nomes da regiao sul
+
+select nome, regiao, populacao from estados 
+WHERE populacao >= 10 -- esses 2 juntos retorna os que tem a populacao maior que 10M
+order by populacao desc -- se rodar os 3 juntos mostra em ordem decrescente e contando a regra do >=10 
+
+update `estados`
+set nome = 'Maranhão'
+where sigla = 'MA'
+
+select est.nome from estados est where sigla = 'MA'
+
+update `estados` set nome = 'Paraná', populacao = 11.32 where sigla = 'PR'
+
+select nome,
+ sigla,
+  populacao 
+  from `estados` est 
+  where sigla = 'PR'
+
+delete from `estados`
+where sigla = 'TT'
+
+select * from `estados`
+
+delete from `estados`
+where id >= 1000
