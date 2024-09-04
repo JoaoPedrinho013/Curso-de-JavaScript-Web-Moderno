@@ -7,25 +7,10 @@ Crie uma tabela chamada tipos para armazenar os diferentes tipos de Pokémon (ex
 3-- Relacionamento pokemons-tipos:
 Altere a tabela pokemons para que as colunas tipo1 e tipo2 sejam chaves estrangeiras que referenciem a tabela tipos.
 
-4-- Tabela regioes:
-Crie uma tabela regioes com colunas para id e nome (ex.: Kanto, Johto). Cada região pode ter múltiplas gerações.
-
-5-- Tabela geracoes:
-Crie uma tabela geracoes com as colunas id, numero, e regiao_id, onde regiao_id é uma chave estrangeira referenciando a tabela regioes.
-
-6-- Relacionamento pokemons-geracoes:
-Altere a tabela pokemons para incluir uma coluna geracao_id, como chave estrangeira para a tabela geracoes.
-
-7-- Inserção de Tipos:
+4-- Inserção de Tipos:
 Insira pelo menos 18 tipos na tabela tipos, representando os tipos de Pokémon.
 
-8-- Inserção de Regiões:
-Insira dados para pelo menos 8 regiões (ex.: Kanto, Johto, Hoenn) na tabela regioes.
-
-9-- Inserção de Gerações:
-Insira dados na tabela geracoes, associando cada geração à sua região correspondente.
-
-10-- Inserção de Pokémon (Parte 1):
+5-- Inserção de Pokémon (Parte 1):
 Insira pelo menos 50 pokémons na tabela pokemons, especificando seus tipos, altura, peso, e geração.
 
 11-- Inserção de Pokémon (Parte 2):
