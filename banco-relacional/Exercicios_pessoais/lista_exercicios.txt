@@ -30,3 +30,17 @@ Crie uma consulta para listar os 10 pokémons mais altos.
 
 11-- Inserção de Pokémon (Parte 3):
 Continue inserindo pokémons até alcançar um total de 300 pokémons. Certifique-se de que todas as gerações estejam representadas.
+
+12-- Escreva uma consulta para listar todos os Pokémon que possuem o tipo fogo usando a tabela de junção.
+
+13-- Selecionar todos os tipos associados a um Pokémon específico.
+Crie uma consulta para exibir todos os tipos de um Pokémon chamado Greninja.
+
+14-- Contar quantos Pokémon pertencem a um determinado tipo.
+Escreva uma consulta para contar quantos Pokémon pertencem ao tipo água.
+
+15-- Listar Pokémon que possuem exatamente dois tipos.
+Escreva uma consulta para encontrar todos os Pokémon que estão associados a exatamente dois tipos na tabela de junção.
+
+16-- Selecionar os Pokémon mais pesados com mais de um tipo.
+Crie uma consulta que mostre os Pokémon mais pesados que possuem mais de um tipo, ordenados pelo peso.
