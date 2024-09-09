@@ -15,12 +15,16 @@ select * from `pokedex_kalos`
 drop table pokedex_tipo
 
 
-SELECT 
-    p.nome AS Nome_do_Pokemon,
-    GROUP_CONCAT(t.nome SEPARATOR ', ') AS Tipo_do_Pokemon
-FROM pokedex_kalos p
-JOIN pokedex_tipo pt ON p.id = pt.pokedex_id
-JOIN tipos t ON pt.tipo_id = t.id
-WHERE t.nome = 'dark'
-GROUP BY p.id, p.nome;
+select 
+`pokedex_kalos`.nome as Nome_do_pokemon,
+group_concat(`tipos`.nome separator ', ') as Tipo_do_Pokemon
 
+from `pokedex_kalos`
+
+join `pokedex_tipo` on `pokedex_kalos`.id = `pokedex_tipo`.pokedex_id
+join `tipos` on `pokedex_tipo`.tipo_id = `tipos`.id
+
+where `tipos`.nome = 'Normal' 
+and `tipos`.nome = 'Flying'
+
+GROUP BY `pokedex_kalos`.id, `pokedex_kalos`.nome;
