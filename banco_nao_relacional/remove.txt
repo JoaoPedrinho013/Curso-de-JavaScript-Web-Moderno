@@ -1,0 +1,16 @@
+db.estados.count()
+
+db.estados.remove({sigla: "SP"})
+
+
+db.estados.remove({populacao: {$exists: true} }, 1) // isso nao funciona corretamente, se quiser tirar apenas 1 documento tem que usar esse abaixo
+//db.estados.deleteOne({ populacao: { $exists: true } })
+//db.estados.deleteMany({ populacao: { $exists: true } }) esse para todos
+
+
+
+
+db.estados.update({sigla: "RJ"}, {$set: {populacao: 16720000} })
+
+db.estados.remove({populacao: {$lt: 20000000} })
+db.estados.find()
