@@ -1,0 +1,75 @@
+db.pokemons.insert({
+    nome: "Charmander",
+    tipo_1: "Fire",
+    altura: 0.6,
+    peso: 8.5,
+    abilities: [
+        { ability: "Blaze" },
+        { hidden: "Solar Power" }
+    ],
+    base_stats: { 
+        hp: 39,
+        attack: 52,
+        defense: 43,
+        sp_atk: 60,
+        sp_def: 50,
+        speed: 65,
+        total: 309
+    },
+    evolutions: {
+        first: "Charmander",
+        second: "Charmeleon",
+        third: "Charizard"
+    }
+})
+
+db.pokemons.insertMany([
+    {
+        name: "Bulbasaur",
+        type_1: "Grass",
+        height: 0.7,
+        weight: 6.9,
+        abilities: [
+            { ability: "Overgrow" },
+            { hidden: "Chlorophyll" }
+        ],
+        base_stats: { 
+            hp: 45,
+            attack: 49,
+            defense: 49,
+            sp_atk: 65,
+            sp_def: 65,
+            speed: 45,
+            total: 318
+        },
+        evolutions: {
+            first: "Bulbasaur",
+            second: "Ivysaur",
+            third: "Venosaur"
+        }
+    },
+    {
+        name: "Squirtle",
+        type_1: "Water",
+        height: 0.5,
+        weight: 9.0,
+        abilities: [
+            { ability: "Torrent" },
+            { hidden: "Rain Dish" }
+        ],
+        base_stats: { 
+            hp: 44,
+            attack: 48,
+            defense: 65,
+            sp_atk: 50,
+            sp_def: 64,
+            speed: 43,
+            total: 314
+        },
+        evolutions: {
+            first: "Squirtle",
+            second: "Wartortle",
+            third: "Blastoise"
+        }
+    }
+])

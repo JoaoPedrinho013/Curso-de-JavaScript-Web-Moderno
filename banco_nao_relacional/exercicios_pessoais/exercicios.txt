@@ -1,0 +1,104 @@
+Consultas Compostas:
+1. Retorne todos os Pokémon que têm o tipo água ou grama.
+2. Encontre todos os Pokémon que têm a habilidade Intimidar e são do tipo fogo.
+
+Filtragem com Condições:
+1. Encontre todos os Pokémon com ataque maior que 80 e defesa maior que 70.
+2. Liste todos os Pokémon que não têm um segundo tipo (onde o campo tipo2 não existe).
+
+Projeção de Campos:
+1. Exiba apenas o nome e tipo de todos os Pokémon.
+2. Exiba o nome e as habilidades de Pokémon que têm mais de 3 habilidades.
+
+Update de Documentos:
+1. Atualize o peso de um Pokémon específico.
+2. Adicione um novo tipo a um Pokémon que inicialmente tinha apenas um tipo.
+
+Adição de Subdocumentos e Arrays:
+1. Adicione uma nova habilidade a um Pokémon já existente.
+2. Adicione uma nova evolução a um Pokémon com base em uma condição de nível.
+
+Operações de Exclusão:
+1. Remova um Pokémon específico da coleção.
+2. Remova todos os Pokémon que não pertencem à região Kanto.
+
+Uso de Aggregations:
+1. Faça uma contagem de quantos Pokémon de cada tipo existem na Pokédex.
+2. Crie uma agregação para encontrar o Pokémon com o maior valor de ataque.
+
+Join de Coleções (Lookup):
+1. Crie uma coleção separada chamada treinadores e relacione-a com os Pokémon.
+2. Use $lookup para encontrar todos os Pokémon que pertencem a um treinador específico.
+
+População Total de Pokémon:
+1. Calcule o número total de Pokémon na sua Pokédex de Kanto usando count.
+
+Consulta Avançada com Unwind:
+1. Use $unwind para desmembrar o array de habilidades e projetar os Pokémon que possuem a habilidade raio.
+
+Esses exercícios ajudarão a construir uma Pokédex completa de Kanto e a aplicar muitos conceitos importantes do MongoDB!
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Estrutura com Múltiplas Coleções
+
+Coleção pokemons:
+- Contém informações básicas sobre cada Pokémon.
+- Campos: nome, tipo1, tipo2, altura, peso, habilidades, estatisticas, evolucoes.
+
+Coleção tipos:
+- Armazena todos os tipos de Pokémon possíveis.
+- Campos: _id, nome, descricao, vantagens (array de tipos), fraquezas (array de tipos).
+- Exemplo: { nome: "fogo", vantagens: ["grama", "gelo"], fraquezas: ["água", "pedra"] }.
+
+Coleção treinadores:
+- Informações sobre treinadores que capturaram os Pokémon.
+- Campos: nome, cidade_origem, pokemons (array de ids dos Pokémon capturados).
+- Exemplo: { nome: "Ash", cidade_origem: "Pallet", pokemons: [ObjectId(...), ObjectId(...)] }.
+
+Coleção regioes:
+- Contém todas as regiões do universo Pokémon.
+- Campos: _id, nome, descricao, cidade_inicial.
+- Exemplo: { nome: "Kanto", descricao: "Primeira região Pokémon", cidade_inicial: "Pallet" }.
+
+Coleção habilidades:
+- Armazena todas as habilidades dos Pokémon.
+- Campos: _id, nome, efeito.
+- Exemplo: { nome: "Intimidar", efeito: "Diminui o ataque do oponente em 1 estágio" }.
+
+Exercícios com Múltiplas Coleções:
+
+1. Criação de Coleções Separadas:
+   - Crie a coleção tipos e insira os tipos de Kanto, como fogo, água, grama, etc.
+   - Crie a coleção treinadores e adicione um treinador com um array de Pokémon capturados.
+
+2. Inserção com Relacionamentos:
+   - Insira novos Pokémon na coleção pokemons, relacionando-os com tipos da coleção tipos.
+   - Insira um treinador na coleção treinadores com Pokémon capturados, relacionando-os via ObjectId da coleção pokemons.
+
+3. Lookup entre Pokémon e Tipos:
+   - Use $lookup para listar os Pokémon e seus respectivos tipos (vinculados pela coleção tipos).
+   - Exemplo: Relacione os ids de tipo1 e tipo2 da coleção pokemons com a coleção tipos.
+
+4. Filtragem com Habilidades:
+   - Crie a coleção habilidades e adicione as habilidades mais comuns de Pokémon de Kanto.
+   - Use $lookup para mostrar as habilidades de cada Pokémon, consultando a coleção habilidades.
+
+5. Join de Treinadores e Pokémon:
+   - Use $lookup para encontrar todos os Pokémon capturados por um treinador específico.
+   - Exemplo: Relacione os Pokémon capturados por Ash com os ids armazenados no array pokemons na coleção treinadores.
+
+6. Agregações com Tipos e Regiões:
+   - Faça uma contagem de quantos Pokémon de cada tipo existem na coleção pokemons, utilizando um $group na coleção tipos.
+   - Relacione os Pokémon com as regiões da coleção regioes, mostrando a distribuição dos Pokémon por região.
+
+7. Atualizações e Inserts Complexos:
+   - Adicione uma nova habilidade a um Pokémon e atualize o documento dele, adicionando o ObjectId da habilidade recém-criada.
+   - Atualize um treinador para adicionar um novo Pokémon capturado, vinculando o id do Pokémon na coleção treinadores.
+
+Finalidade das Múltiplas Coleções:
+O uso de múltiplas coleções facilita o gerenciamento de dados relacionados, tornando o design do banco de dados mais modular e flexível. Isso permite:
+- Reutilização de dados: Por exemplo, um tipo fogo pode ser relacionado a vários Pokémon sem precisar duplicar as informações.
+- Consultas mais eficientes: Com lookup e agregações, você pode criar consultas complexas para obter insights detalhados sobre Pokémon, tipos, treinadores e habilidades.
+
+Com isso, sua Pokédex de Kanto pode se tornar mais robusta e flexível, enquanto você ganha prática em relacionar dados entre diferentes coleções no MongoDB.
