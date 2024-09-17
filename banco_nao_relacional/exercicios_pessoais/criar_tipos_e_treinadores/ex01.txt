@@ -1,0 +1,92 @@
+db.tipos.insertMany([
+    {
+        nome: "Fire",
+        vantagens: ["Grass", "Ice", "Steel", "Bug"],
+        fraquezas: ["Water", "Ground", "Rock"]
+    },
+    {
+        nome: "Water",
+        vantagens: ["Fire", "Rock", "Ground"],
+        fraquezas: ["Electric", "Grass"]
+    },
+    {
+        nome: "Grass",
+        vantagens: ["Water", "Rock", "Ground"],
+        fraquezas: ["Fire", "Ice", "Flying", "Poison", "Bug"]
+    },
+    {
+        nome: "Electric",
+        vantagens: ["Water", "Flying"],
+        fraquezas: ["Ground"]
+    },
+    {
+        nome: "Ground",
+        vantagens: ["Fire", "Electric", "Poison"],
+        fraquezas: ["Water", "Ice", "Grass"]
+    },
+    {
+        nome: "Rock",
+        vantagens: ["Fire", "Ice", "Flying"],
+        fraquezas: ["Water", "Grass", "Fighting", "Ground", "Steel"]
+    },
+    {
+        nome: "Steel",
+        vantagens: ["Ice", "Rock", "Fairy"],
+        fraquezas: ["Fire", "Fighting", "Ground"]
+    },
+    {
+        nome: "Ice",
+        vantagens: ["Grass", "Ground", "Flying", "Dragon"],
+        fraquezas: ["Fire", "Fighting", "Rock", "Steel"]
+    },
+    {
+        nome: "Flying",
+        vantagens: ["Grass", "Fighting", "Bug"],
+        fraquezas: ["Electric", "Ice", "Rock"]
+    },
+    {
+        nome: "Bug",
+        vantagens: ["Grass", "Psychic", "Dark"],
+        fraquezas: ["Fire", "Flying"]
+    },
+    {
+        nome: "Fighting",
+        vantagens: ["Normal", "Rock", "Dark", "Steel"],
+        fraquezas: ["Flying", "Psychic", "Fairy"]
+    },
+    {
+        nome: "Psychic",
+        vantagens: ["Fighting", "Poison"],
+        fraquezas: ["Bug", "Ghost", "Dark"]
+    },
+    {
+        nome: "Poison",
+        vantagens: ["Grass", "Fairy"],
+        fraquezas: ["Ground", "Psychic"]
+    },
+    {
+        nome: "Ghost",
+        vantagens: ["Psychic", "Ghost"],
+        fraquezas: ["Ghost", "Dark"]
+    },
+    {
+        nome: "Dragon",
+        vantagens: ["Dragon"],
+        fraquezas: ["Ice", "Dragon", "Fairy"]
+    },
+    {
+        nome: "Dark",
+        vantagens: ["Psychic", "Ghost"],
+        fraquezas: ["Fighting", "Bug", "Fairy"]
+    },
+    {
+        nome: "Fairy",
+        vantagens: ["Fighting", "Dragon", "Dark"],
+        fraquezas: ["Poison", "Steel"]
+    },
+    {
+        nome: "Normal",
+        vantagens: [],
+        fraquezas: ["Fighting"]
+    }
+])

@@ -1,75 +1,92 @@
-db.pokemons.insert({
-    nome: "Charmander",
-    tipo_1: "Fire",
-    altura: 0.6,
-    peso: 8.5,
-    abilities: [
-        { ability: "Blaze" },
-        { hidden: "Solar Power" }
-    ],
-    base_stats: { 
-        hp: 39,
-        attack: 52,
-        defense: 43,
-        sp_atk: 60,
-        sp_def: 50,
-        speed: 65,
-        total: 309
-    },
-    evolutions: {
-        first: "Charmander",
-        second: "Charmeleon",
-        third: "Charizard"
-    }
-})
-
 db.pokemons.insertMany([
     {
-        name: "Bulbasaur",
-        type_1: "Grass",
-        height: 0.7,
-        weight: 6.9,
-        abilities: [
-            { ability: "Overgrow" },
-            { hidden: "Chlorophyll" }
+        nome: "Charmander",
+        tipo_1: "Fire",
+        altura: 0.6,
+        peso: 8.5,
+        habilidades: [
+            { habilidade: "Blaze" },
+            { oculta: "Solar Power" }
         ],
-        base_stats: { 
-            hp: 45,
-            attack: 49,
-            defense: 49,
-            sp_atk: 65,
-            sp_def: 65,
-            speed: 45,
-            total: 318
+        estatisticas_base: { 
+            hp: 39,
+            ataque: 52,
+            defesa: 43,
+            ataque_especial: 60,
+            defesa_especial: 50,
+            velocidade: 65,
+            total: 309
         },
-        evolutions: {
-            first: "Bulbasaur",
-            second: "Ivysaur",
-            third: "Venosaur"
+        evolucoes: {
+            primeira: "Charmander",
+            segunda: "Charmeleon",
+            terceira: "Charizard"
         }
     },
     {
-        name: "Squirtle",
-        type_1: "Water",
-        height: 0.5,
-        weight: 9.0,
-        abilities: [
-            { ability: "Torrent" },
-            { hidden: "Rain Dish" }
+        nome: "Bulbasaur",
+        tipo_1: "Grass",
+        altura: 0.7,
+        peso: 6.9,
+        habilidades: [
+            { habilidade: "Overgrow" },
+            { oculta: "Chlorophyll" }
         ],
-        base_stats: { 
+        estatisticas_base: { 
+            hp: 45,
+            ataque: 49,
+            defesa: 49,
+            ataque_especial: 65,
+            defesa_especial: 65,
+            velocidade: 45,
+            total: 318
+        },
+        evolucoes: {
+            primeira: "Bulbasaur",
+            segunda: "Ivysaur",
+            terceira: "Venosaur"
+        }
+    },
+    {
+        nome: "Squirtle",
+        tipo_1: "Water",
+        altura: 0.5,
+        peso: 9.0,
+        habilidades: [
+            { habilidade: "Torrent" },
+            { oculta: "Rain Dish" }
+        ],
+        estatisticas_base: { 
             hp: 44,
-            attack: 48,
-            defense: 65,
-            sp_atk: 50,
-            sp_def: 64,
-            speed: 43,
+            ataque: 48,
+            defesa: 65,
+            ataque_especial: 50,
+            defesa_especial: 64,
+            velocidade: 43,
             total: 314
         },
-        evolutions: {
-            first: "Squirtle",
-            second: "Wartortle",
-            third: "Blastoise"
+        evolucoes: {
+            primeira: "Squirtle",
+            segunda: "Wartortle",
+            terceira: "Blastoise"
         }
     }
 ])
+
+
+charmander - fogo
+Squirtle - agua
+Bulbasaur - grama
+
+grininja - agua, dark 
+pikachu - eletrico 
+gengar - fantasma - Veneno
+eevee - Normal
+mewtwo - Psiquico
+himonchan - lutador 
+skarmory - aço e voador
+scyther - inseto e voador 
+Garchomp - dragao e Terra
+vanilluxe - gelo
+gardevoir - Psiquico e Fada
+graveler - pedra e terra

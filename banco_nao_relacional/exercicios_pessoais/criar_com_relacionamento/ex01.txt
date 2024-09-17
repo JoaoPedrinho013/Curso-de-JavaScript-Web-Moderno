@@ -1,0 +1,288 @@
+db.pokemons.insertMany([
+    {
+        nome: "Greninja",
+        tipo_1: ObjectId('66e966904cd797f4c3c73bfb'),  // Water
+        tipo_2: ObjectId('66e966904cd797f4c3c73c07'),  // Dark
+        altura: 1.5,
+        peso: 40.0,
+        habilidades: [
+            { habilidade: "Torrent" },
+            { oculta: "Protean" }
+        ],
+        estatisticas_base: { 
+            hp: 72,
+            ataque: 95,
+            defesa: 67,
+            ataque_especial: 103,
+            defesa_especial: 71,
+            velocidade: 122,
+            total: 530
+        },
+        evolucoes: {
+            primeira: "Froakie",
+            segunda: "Frogadier",
+            terceira: "Greninja"
+        }
+    },
+    {
+        nome: "Pikachu",
+        tipo_1: ObjectId('66e966904cd797f4c3c73bfb'),  // Electric
+        altura: 0.4,
+        peso: 6.0,
+        habilidades: [
+            { habilidade: "Static" },
+            { oculta: "Lightning Rod" }
+        ],
+        estatisticas_base: { 
+            hp: 35,
+            ataque: 55,
+            defesa: 40,
+            ataque_especial: 50,
+            defesa_especial: 50,
+            velocidade: 90,
+            total: 320
+        },
+        evolucoes: {
+            primeira: "Pichu",
+            segunda: "Pikachu",
+            terceira: "Raichu"
+        }
+    },
+    {
+        nome: "Gengar",
+        tipo_1: ObjectId('66e966904cd797f4c3c73c05'),  // Ghost
+        tipo_2: ObjectId('66e966904cd797f4c3c73c04'),  // Poison
+        altura: 1.5,
+        peso: 40.5,
+        habilidades: [
+            { habilidade: "Cursed Body" }
+        ],
+        estatisticas_base: { 
+            hp: 60,
+            ataque: 65,
+            defesa: 60,
+            ataque_especial: 130,
+            defesa_especial: 75,
+            velocidade: 110,
+            total: 500
+        },
+        evolucoes: {
+            primeira: "Gastly",
+            segunda: "Haunter",
+            terceira: "Gengar"
+        }
+    },
+    {
+        nome: "Eevee",
+        tipo_1: ObjectId('66e966904cd797f4c3c73c09'),  // Normal
+        altura: 0.3,
+        peso: 6.5,
+        habilidades: [
+            { habilidade: ["Run Away" , "Adaptability"]},
+            { oculta: "Anticipation" }
+        ],
+        estatisticas_base: { 
+            hp: 55,
+            ataque: 55,
+            defesa: 50,
+            ataque_especial: 45,
+            defesa_especial: 65,
+            velocidade: 55,
+            total: 325
+        },
+        evolucoes: {
+            primeira: "Eevee"
+        }
+    },
+    {
+        nome: "Mewtwo",
+        tipo_1: ObjectId('66e966904cd797f4c3c73c03'),  // Psychic
+        altura: 2.0,
+        peso: 122.0,
+        habilidades: [
+            { habilidade: "Pressure" },
+            { oculta: "Unnerve" }
+        ],
+        estatisticas_base: { 
+            hp: 106,
+            ataque: 110,
+            defesa: 90,
+            ataque_especial: 154,
+            defesa_especial: 90,
+            velocidade: 130,
+            total: 680
+        },
+        evolucoes: {
+            primeira: "Mewtwo"
+        }
+    },
+    {
+        nome: "Hitmonchan",
+        tipo_1: ObjectId('66e966904cd797f4c3c73c02'),  // Fighting
+        altura: 1.4,
+        peso: 50.2,
+        habilidades: [
+            { habilidade: ["Keen Eye", "Iron Fist"]},
+            { oculta: "Inner Focus" }
+        ],
+        estatisticas_base: { 
+            hp: 50,
+            ataque: 105,
+            defesa: 79,
+            ataque_especial: 35,
+            defesa_especial: 110,
+            velocidade: 76,
+            total: 455
+        },
+        evolucoes: {
+            primeira: "Tyrogue",
+            segunda: "Hitmonchan"
+        }
+    },
+    {
+        nome: "Skarmory",
+        tipo_1: ObjectId('66e966904cd797f4c3c73bfe'),  // Steel
+        tipo_2: ObjectId('66e966904cd797f4c3c73c00'),  // Flying
+        altura: 1.7,
+        peso: 50.5,
+        habilidades: [
+            { habilidade: ["Keen Eye", "Sturdy"] },
+            { oculta: "Weak Armor" }
+        ],
+        estatisticas_base: { 
+            hp: 65,
+            ataque: 80,
+            defesa: 140,
+            ataque_especial: 40,
+            defesa_especial: 70,
+            velocidade: 70,
+            total: 465
+        },
+        evolucoes: {
+            primeira: "Skarmory"
+        }
+    },
+    {
+        nome: "Scyther",
+        tipo_1: ObjectId('66e966904cd797f4c3c73c01'),  // Bug
+        tipo_2: ObjectId('66e966904cd797f4c3c73c00'),  // Flying
+        altura: 1.5,
+        peso: 56.0,
+        habilidades: [
+            { habilidade: ["Swarm", "Technician"] },
+            { oculta: "Steadfast" }
+        ],
+        estatisticas_base: { 
+            hp: 70,
+            ataque: 110,
+            defesa: 80,
+            ataque_especial: 55,
+            defesa_especial: 80,
+            velocidade: 105,
+            total: 500
+        },
+        evolucoes: {
+            primeira: "Scyther",
+            segunda: "Scizor"
+        }
+    },
+    {
+        nome: "Garchomp",
+        tipo_1: ObjectId('66e966904cd797f4c3c73c06'),  // Dragon
+        tipo_2: ObjectId('66e966904cd797f4c3c73bfc'),  // Ground
+        altura: 1.9,
+        peso: 95.0,
+        habilidades: [
+            { habilidade: "Sand Veil" },
+            { oculta: "Rough Skin" }
+        ],
+        estatisticas_base: { 
+            hp: 108,
+            ataque: 130,
+            defesa: 95,
+            ataque_especial: 80,
+            defesa_especial: 85,
+            velocidade: 102,
+            total: 600
+        },
+        evolucoes: {
+            primeira: "Gible",
+            segunda: "Gabite",
+            terceira: "Garchomp"
+        }
+    },
+    {
+        nome: "Vanilluxe",
+        tipo_1: ObjectId('66e966904cd797f4c3c73bff'),  // Ice
+        altura: 1.3,
+        peso: 57.5,
+        habilidades: [
+            { habilidade: ["Ice Body", "Snow Warning"] },
+            { oculta: "Weak Armor" }
+        ],
+        estatisticas_base: { 
+            hp: 71,
+            ataque: 95,
+            defesa: 85,
+            ataque_especial: 110,
+            defesa_especial: 95,
+            velocidade: 79,
+            total: 535
+        },
+        evolucoes: {
+            primeira: "Vanillite",
+            segunda: "Vanillish",
+            terceira: "Vanilluxe"
+        }
+    },
+    {
+        nome: "Gardevoir",
+        tipo_1: ObjectId('66e966904cd797f4c3c73c03'),  // Psychic
+        tipo_2: ObjectId('66e966904cd797f4c3c73c08'),  // Fairy
+        altura: 1.6,
+        peso: 48.4,
+        habilidades: [
+            { habilidade: ["Synchronize", "Trace"] },
+            { oculta: "Telepathy" }
+        ],
+        estatisticas_base: { 
+            hp: 68,
+            ataque: 65,
+            defesa: 65,
+            ataque_especial: 125,
+            defesa_especial: 115,
+            velocidade: 80,
+            total: 518
+        },
+        evolucoes: {
+            primeira: "Ralts",
+            segunda: "Kirlia",
+            terceira: "Gardevoir"
+        }
+    },
+    {
+        nome: "Graveler",
+        tipo_1: ObjectId('66e966904cd797f4c3c73bfd'),  // Rock
+        tipo_2: ObjectId('66e966904cd797f4c3c73bfc'),  // Ground
+        altura: 1.0,
+        peso: 105.0,
+        habilidades: [
+            { habilidade: ["Rock Head", "Sturdy"] },
+            { oculta: "Sand Veil" }
+        ],
+        estatisticas_base: { 
+            hp: 55,
+            ataque: 95,
+            defesa: 115,
+            ataque_especial: 45,
+            defesa_especial: 45,
+            velocidade: 35,
+            total: 390
+        },
+        evolucoes: {
+            primeira: "Geodude",
+            segunda: "Graveler",
+            terceira: "Golem"
+        }
+    }
+])

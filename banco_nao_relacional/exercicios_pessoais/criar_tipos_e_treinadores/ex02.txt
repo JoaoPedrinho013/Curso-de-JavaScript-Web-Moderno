@@ -1,0 +1,12 @@
+db.treinadores.insertMany([
+    {
+        nome: "Azien",
+        cidade_origem: "Pallet",
+        pokemons: [ObjectId('66e969c04cd797f4c3c73c0a')]
+    },
+    {
+        nome: "Lightyear",
+        cidade_origem: "Pallet",
+        pokemons: [ObjectId('66e969c04cd797f4c3c73c0c')]
+    }
+])
