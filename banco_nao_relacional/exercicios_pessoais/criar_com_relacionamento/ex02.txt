@@ -1,0 +1,24 @@
+db.treinadores.insertMany([
+    {
+        nome: "Kadu",
+        cidade_origem: "Pallet",
+        pokemons: [ObjectId('66e976634cd797f4c3c73c10')]
+    },
+    {
+        nome: "Rich",
+        cidade_origem: "Pallet",
+        pokemons: [ObjectId('66e969c04cd797f4c3c73c0b')]
+    }
+])
+
+
+
+db.treinadores.update(
+  { nome: "Azien" },
+  { $push: { pokemons: ObjectId('66e976634cd797f4c3c73c13') } }
+)
+
+db.treinadores.update(
+  { nome: "Lightyear" },
+  { $push: { pokemons: ObjectId('66e976634cd797f4c3c73c17') } }
+)

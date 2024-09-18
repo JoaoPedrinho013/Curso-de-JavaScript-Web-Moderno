@@ -286,3 +286,8 @@ db.pokemons.insertMany([
         }
     }
 ])
+
+
+db.pokemons.update({nome: "Charmander"}, {$set: {tipo_1: '66e966904cd797f4c3c73bf8'} })
+db.pokemons.update({nome: "Bulbasaur"}, {$set: {tipo_1: '66e966904cd797f4c3c73bfa'} })
+db.pokemons.update({nome: "Squirtle"}, {$set: {tipo_1: '66e966904cd797f4c3c73bf9'} })
