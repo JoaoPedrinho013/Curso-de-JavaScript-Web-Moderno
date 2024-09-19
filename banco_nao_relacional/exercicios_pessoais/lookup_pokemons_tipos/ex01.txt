@@ -1,0 +1,46 @@
+db.pokemons.aggregate([
+    // Faz o lookup para o primeiro tipo
+    {
+        $lookup: {
+            from: "tipos",
+            localField: "tipo_1", // Relacionamento com o primeiro tipo
+            foreignField: "_id",  // O campo _id em tipos
+            as: "tipo_1_info"     // Nome do array que vai armazenar os resultados
+        }
+    },
+    // Faz o lookup para o segundo tipo (se existir)
+    {
+        $lookup: {
+            from: "tipos",
+            localField: "tipo_2", // Relacionamento com o segundo tipo
+            foreignField: "_id",  
+            as: "tipo_2_info"
+        }
+    },
+    // Cria um campo para combinar as informações dos dois tipos
+    {
+        $addFields: {
+            tipo_combined: {
+                $concatArrays: [
+                    { $ifNull: ["$tipo_1_info", []] },  // Verifica se existe o tipo 1
+                    { $ifNull: ["$tipo_2_info", []] }   // Verifica se existe o tipo 2
+                ]
+            }
+        }
+    },
+    // Desnormaliza o array combinado de tipos
+    {
+        $unwind: "$tipo_combined"
+    },
+    // Agrupa os Pokémon por tipo
+    {
+        $group: {
+            _id: "$tipo_combined.nome",  // Agrupa pelo nome do tipo
+            pokemons: { $push: "$nome" } // Adiciona o nome dos Pokémon a uma lista
+        }
+    },
+    // Ordena os grupos pelo nome do tipo
+    {
+        $sort: { _id: 1 }
+    }
+]).pretty()

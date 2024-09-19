@@ -1,0 +1,32 @@
+[
+  {
+    _id: ObjectId('66e96a8a4cd797f4c3c73c0d'),
+    nome: 'Azien',
+    cidade_origem: 'Pallet',
+    pokemons: [
+      ObjectId('66e969c04cd797f4c3c73c0a'),
+      ObjectId('66e976634cd797f4c3c73c13')
+    ]
+  },
+  {
+    _id: ObjectId('66e96a8a4cd797f4c3c73c0e'),
+    nome: 'Lightyear',
+    cidade_origem: 'Pallet',
+    pokemons: [
+      ObjectId('66e969c04cd797f4c3c73c0c'),
+      ObjectId('66e976634cd797f4c3c73c17')
+    ]
+  },
+  {
+    _id: ObjectId('66eab41109f98e8883c73bf8'),
+    nome: 'Kadu',
+    cidade_origem: 'Pallet',
+    pokemons: [ ObjectId('66e976634cd797f4c3c73c10') ]
+  },
+  {
+    _id: ObjectId('66eab41109f98e8883c73bf9'),
+    nome: 'Rich',
+    cidade_origem: 'Pallet',
+    pokemons: [ ObjectId('66e969c04cd797f4c3c73c0b') ]
+  }
+]

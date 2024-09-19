@@ -1,0 +1,231 @@
+db.habilidades.insertMany([
+  { nome: "Solar Power", oculta: true },
+  { nome: "Chlorophyll", oculta: true },
+  { nome: "Rain Dish", oculta: true },
+  { nome: "Protean", oculta: true },
+  { nome: "Lightning Rod", oculta: true },
+  { nome: "Anticipation", oculta: true },
+  { nome: "Unnerve", oculta: true },
+  { nome: "Inner Focus", oculta: true },
+  { nome: "Weak Armor", oculta: true },
+  { nome: "Steadfast", oculta: true },
+  { nome: "Rough Skin", oculta: true },
+  { nome: "Telepathy", oculta: true }
+])
+
+db.habilidades.insertMany([
+[  { nome: "Blaze" },
+  { nome: "Overgrow" },
+  { nome: "Torrent" },
+  { nome: "Static" },
+  { nome: "Cursed Body" },
+  { nome: "Run Away" },
+  { nome: "Adaptability" },
+  { nome: "Pressure" },
+  { nome: "Keen Eye" },
+  { nome: "Iron Fist" },
+  { nome: "Sturdy" },
+  { nome: "Technician" },
+  { nome: "Sand Veil" },
+  { nome: "Snow Warning" },
+  { nome: "Synchronize" },
+  { nome: "Trace" },
+  { nome: "Rock Head" }]
+])
+
+
+
+
+// Charmander
+db.pokemons.updateMany(
+  { _id: ObjectId('66e969c04cd797f4c3c73c0a') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c2e') }, // Blaze
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c3f') }  // Solar Power
+      ]
+    }
+  }
+);
+
+// Bulbasaur
+db.pokemons.updateMany(
+  { _id: ObjectId('66e969c04cd797f4c3c73c0b') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c2f') }, // Overgrow
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c40') }  // Chlorophyll
+      ]
+    }
+  }
+);
+
+// Squirtle
+db.pokemons.updateMany(
+  { _id: ObjectId('66e969c04cd797f4c3c73c0c') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c30') }, // Torrent
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c41') }  // Rain Dish
+      ]
+    }
+  }
+);
+
+// Greninja
+db.pokemons.updateMany(
+  { _id: ObjectId('66e976634cd797f4c3c73c0f') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c30') }, // Torrent
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c42') }  // Protean
+      ]
+    }
+  }
+);
+
+// Pikachu
+db.pokemons.updateMany(
+  { _id: ObjectId('66e976634cd797f4c3c73c10') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c31') }, // Static
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c43') }  // Lightning Rod
+      ]
+    }
+  }
+);
+
+// Gengar
+db.pokemons.updateMany(
+  { _id: ObjectId('66e976634cd797f4c3c73c11') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c32') }  // Cursed Body
+      ]
+    }
+  }
+);
+
+// Eevee
+db.pokemons.updateMany(
+  { _id: ObjectId('66e976634cd797f4c3c73c12') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: [ ObjectId('66ec0f4d1347ca6bc8c73c33'), ObjectId('66ec0f4d1347ca6bc8c73c34') ] }, // Run Away, Adaptability
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c44') }  // Anticipation
+      ]
+    }
+  }
+);
+
+// Mewtwo
+db.pokemons.updateMany(
+  { _id: ObjectId('66e976634cd797f4c3c73c13') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c35') }, // Pressure
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c45') }  // Unnerve
+      ]
+    }
+  }
+);
+
+// Hitmonchan
+db.pokemons.updateMany(
+  { _id: ObjectId('66e976634cd797f4c3c73c14') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: [ ObjectId('66ec0f4d1347ca6bc8c73c36'), ObjectId('66ec0f4d1347ca6bc8c73c37') ] }, // Keen Eye, Iron Fist
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c46') }  // Inner Focus
+      ]
+    }
+  }
+);
+
+// Skarmory
+db.pokemons.updateMany(
+  { _id: ObjectId('66e976634cd797f4c3c73c15') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: [ ObjectId('66ec0f4d1347ca6bc8c73c36'), ObjectId('66ec0f4d1347ca6bc8c73c38') ] }, // Keen Eye, Sturdy
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c47') }  // Weak Armor
+      ]
+    }
+  }
+);
+
+// Scyther
+db.pokemons.updateMany(
+  { _id: ObjectId('66e976634cd797f4c3c73c16') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: [ ObjectId('66ec0f4d1347ca6bc8c73c39'), ObjectId('66ec0f4d1347ca6bc8c73c37') ] }, // Swarm, Technician
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c48') }  // Steadfast
+      ]
+    }
+  }
+);
+
+// Garchomp
+db.pokemons.updateMany(
+  { _id: ObjectId('66e976634cd797f4c3c73c17') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c3a') }, // Sand Veil
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c49') }  // Rough Skin
+      ]
+    }
+  }
+);
+
+// Vanilluxe
+db.pokemons.updateMany(
+  { _id: ObjectId('66e976634cd797f4c3c73c18') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: [ ObjectId('66ec0f4d1347ca6bc8c73c3b'), ObjectId('66ec0f4d1347ca6bc8c73c3a') ] }, // Ice Body, Snow Warning
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c47') }  // Weak Armor
+      ]
+    }
+  }
+);
+
+// Gardevoir
+db.pokemons.updateMany(
+  { _id: ObjectId('66e976634cd797f4c3c73c19') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: [ ObjectId('66ec0f4d1347ca6bc8c73c3c'), ObjectId('66ec0f4d1347ca6bc8c73c3d') ] }, // Synchronize, Trace
+        { oculta: ObjectId('66ec0f541347ca6bc8c73c4a') }  // Telepathy
+      ]
+    }
+  }
+);
+
+// Graveler
+db.pokemons.updateMany(
+  { _id: ObjectId('66e976634cd797f4c3c73c1a') },
+  {
+    $set: {
+      habilidades: [
+        { habilidade: [ ObjectId('66ec0f4d1347ca6bc8c73c3e'), ObjectId('66ec0f4d1347ca6bc8c73c38') ] }, // Rock Head, Sturdy
+        { oculta: ObjectId('66ec0f4d1347ca6bc8c73c3a') }  // Sand Veil
+      ]
+    }
+  }
+);

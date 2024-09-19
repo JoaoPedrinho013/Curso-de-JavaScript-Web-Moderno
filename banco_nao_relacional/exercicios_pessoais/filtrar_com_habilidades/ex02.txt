@@ -1,0 +1,45 @@
+db.pokemons.aggregate([
+  {
+    $lookup: {
+      from: 'habilidades',
+      localField: 'habilidades.habilidade',
+      foreignField: '_id',
+      as: 'habilidades_detalhadas'
+    }
+  },
+  {
+    $unwind: { path: '$habilidades_detalhadas', preserveNullAndEmptyArrays: true }
+  },
+  {
+    $group: {
+      _id: '$_id',
+      nome: { $first: '$nome' },
+      habilidades: { $push: '$habilidades_detalhadas' }
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      nome: 1,
+      habilidades: {
+        $map: {
+          input: '$habilidades',
+          as: 'habilidade',
+          in: { nome: '$$habilidade.nome' }
+        }
+      }
+    }
+  }
+]);
+
+
+
+
+
+  /* {
+    $project: {
+      _id: 0,  // Não inclui o campo _id no resultado final
+      nome: 1, // Inclui o campo nome
+      habilidades: 1 // Inclui o campo habilidades
+    }
+  } */
