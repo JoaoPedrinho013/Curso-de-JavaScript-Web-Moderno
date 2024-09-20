@@ -1,0 +1,42 @@
+db.pokemons.aggregate([
+  {
+    $lookup: {
+      from: "habilidades", 
+      localField: "habilidades.habilidade", 
+      foreignField: "_id", 
+      as: "habilidade_info"
+    }
+  },
+  {
+    $lookup: {
+      from: "habilidades", 
+      localField: "habilidades.oculta", 
+      foreignField: "_id", 
+      as: "habilidade_oculta_info"
+    }
+  },
+  {
+    $project: {
+        _id:0,
+      nome: 1,
+      habilidades: {
+        $concatArrays: [
+          { 
+            $map: {
+              input: "$habilidade_info",
+              as: "habilidade",
+              in: { $concat: ["Habilidade: ", "$$habilidade.nome"] }
+            }
+          },
+          { 
+            $map: {
+              input: "$habilidade_oculta_info",
+              as: "oculta",
+              in: { $concat: ["Habilidade Oculta: ", "$$oculta.nome"] }
+            }
+          }
+        ]
+      }
+    }
+  }
+]);
