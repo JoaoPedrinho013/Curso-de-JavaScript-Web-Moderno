@@ -1,0 +1,40 @@
+db.pokemons.aggregate([
+        {
+        $lookup: {
+            from: "tipos",
+            localField: "tipo_1",
+            foreignField: "_id",
+            as: "tipo_1_info"
+        }
+    },
+    {
+        $lookup: {
+            from: "tipos",
+            localField: "tipo_2",
+            foreignField: "_id",  
+            as: "tipo_2_info"
+        }
+    },
+    {
+        $addFields: {
+            tipo_combined: {
+                $concatArrays: [
+                    { $ifNull: ["$tipo_1_info", []] },
+                    { $ifNull: ["$tipo_2_info", []] }
+                ]
+            }
+        }
+    },
+    {
+        $unwind: "$tipo_combined"
+    },
+    {
+        $group: {
+            _id: "$tipo_combined.nome",  
+            pokemons: { $sum: 1 } // soma + 1 a cada pokemon que passar
+        }
+    },
+    {
+        $sort: { _id: 1 }
+    }
+]).pretty()

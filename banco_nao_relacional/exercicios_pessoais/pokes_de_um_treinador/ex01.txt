@@ -1,0 +1,19 @@
+db.treinadores.aggregate([
+    {
+        $lookup: {
+      from: "pokemons", 
+      localField: "pokemons", 
+      foreignField: "_id", 
+      as: "pokkemons"
+    }
+    }, 
+    {
+    $project: {
+        _id: 0,
+        nome: 1,
+        "pokkemons.nome":1
+      
+    }
+  }
+    
+])
