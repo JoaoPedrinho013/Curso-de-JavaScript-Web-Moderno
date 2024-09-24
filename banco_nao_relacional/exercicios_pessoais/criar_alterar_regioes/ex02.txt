@@ -1,0 +1,22 @@
+db.pokemons.update({nome: "Charmander"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')} });
+db.pokemons.update({nome: "Bulbasaur"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')} });
+db.pokemons.update({nome: "Squirtle"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')} });
+db.pokemons.update({nome: "Pikachu"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')} });
+db.pokemons.update({nome: "Eevee"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')} });
+db.pokemons.update({nome: "Mewtwo"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')} });
+db.pokemons.update({nome: "Gengar"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')} });
+
+db.pokemons.update({nome: "Greninja"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bfd')} });
+
+
+db.pokemons.update({nome: "Hitmonchan"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bfa')} });
+db.pokemons.update({nome: "Skarmory"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bfa')} });
+
+db.pokemons.update({nome: "Scyther"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bf9')} });
+db.pokemons.update({nome: "Graveler"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bf9')} });
+
+
+db.pokemons.update({nome: "Vanilluxe"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bfc')} });
+
+db.pokemons.update({nome: "Garchomp"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bfb')} });
+db.pokemons.update({nome: "Gardevoir"}, {$set: {regiao_origem: ObjectId('66f15bb4ada737acb1c73bfb')} });

@@ -1,0 +1,32 @@
+[
+  {
+    _id: ObjectId('66f15bb4ada737acb1c73bf8'),
+    nome: 'Kanto',
+    cidade_inicial: 'Pallet Towm'
+  },
+  {
+    _id: ObjectId('66f15bb4ada737acb1c73bf9'),
+    nome: 'Johto',
+    cidade_inicial: 'New Bark Towm'
+  },
+  {
+    _id: ObjectId('66f15bb4ada737acb1c73bfa'),
+    nome: 'Hoenn',
+    cidade_inicial: 'Littleroot Towm'
+  },
+  {
+    _id: ObjectId('66f15bb4ada737acb1c73bfb'),
+    nome: 'Sinnoh',
+    cidade_inicial: 'Twinleaf Towm'
+  },
+  {
+    _id: ObjectId('66f15bb4ada737acb1c73bfc'),
+    nome: 'Unova',
+    cidade_inicial: 'Nuvema Towm'
+  },
+  {
+    _id: ObjectId('66f15bb4ada737acb1c73bfd'),
+    nome: 'Kalos',
+    cidade_inicial: 'Vaniville Towm'
+  }
+]

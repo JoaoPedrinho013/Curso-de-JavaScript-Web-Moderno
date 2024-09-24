@@ -1,0 +1,378 @@
+[
+  {
+    _id: ObjectId('66e969c04cd797f4c3c73c0a'),
+    nome: 'Charmander',
+    tipo_1: ObjectId('66e966904cd797f4c3c73bf8'),
+    altura: 0.6,
+    peso: 8.5,
+    habilidades: [
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c2e') },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c3f') }
+    ],
+    estatisticas_base: {
+      hp: 39,
+      ataque: 52,
+      defesa: 43,
+      ataque_especial: 60,
+      defesa_especial: 50,
+      velocidade: 65,
+      total: 309
+    },
+    evolucoes: {
+      primeira: 'Charmander',
+      segunda: 'Charmeleon',
+      terceira: 'Charizard'
+    },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')
+  },
+  {
+    _id: ObjectId('66e969c04cd797f4c3c73c0b'),
+    nome: 'Bulbasaur',
+    tipo_1: ObjectId('66e966904cd797f4c3c73bfa'),
+    altura: 0.7,
+    peso: 6.9,
+    habilidades: [
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c2f') },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c40') }
+    ],
+    estatisticas_base: {
+      hp: 45,
+      ataque: 49,
+      defesa: 49,
+      ataque_especial: 65,
+      defesa_especial: 65,
+      velocidade: 45,
+      total: 318
+    },
+    evolucoes: { primeira: 'Bulbasaur', segunda: 'Ivysaur', terceira: 'Venosaur' },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')
+  },
+  {
+    _id: ObjectId('66e969c04cd797f4c3c73c0c'),
+    nome: 'Squirtle',
+    tipo_1: ObjectId('66e966904cd797f4c3c73bf9'),
+    altura: 0.5,
+    peso: 9,
+    habilidades: [
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c30') },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c41') }
+    ],
+    estatisticas_base: {
+      hp: 44,
+      ataque: 48,
+      defesa: 65,
+      ataque_especial: 50,
+      defesa_especial: 64,
+      velocidade: 43,
+      total: 314
+    },
+    evolucoes: {
+      primeira: 'Squirtle',
+      segunda: 'Wartortle',
+      terceira: 'Blastoise'
+    },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')
+  },
+  {
+    _id: ObjectId('66e976634cd797f4c3c73c0f'),
+    nome: 'Greninja',
+    tipo_1: ObjectId('66e966904cd797f4c3c73bf9'),
+    tipo_2: ObjectId('66e966904cd797f4c3c73c07'),
+    altura: 1.5,
+    peso: 40,
+    habilidades: [
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c30') },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c42') }
+    ],
+    estatisticas_base: {
+      hp: 72,
+      ataque: 95,
+      defesa: 67,
+      ataque_especial: 103,
+      defesa_especial: 71,
+      velocidade: 122,
+      total: 530
+    },
+    evolucoes: { primeira: 'Froakie', segunda: 'Frogadier', terceira: 'Greninja' },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bfd')
+  },
+  {
+    _id: ObjectId('66e976634cd797f4c3c73c10'),
+    nome: 'Pikachu',
+    tipo_1: ObjectId('66e966904cd797f4c3c73bfb'),
+    altura: 0.4,
+    peso: 6,
+    habilidades: [
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c31') },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c43') }
+    ],
+    estatisticas_base: {
+      hp: 35,
+      ataque: 55,
+      defesa: 40,
+      ataque_especial: 50,
+      defesa_especial: 50,
+      velocidade: 90,
+      total: 320
+    },
+    evolucoes: { primeira: 'Pichu', segunda: 'Pikachu', terceira: 'Raichu' },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')
+  },
+  {
+    _id: ObjectId('66e976634cd797f4c3c73c11'),
+    nome: 'Gengar',
+    tipo_1: ObjectId('66e966904cd797f4c3c73c05'),
+    tipo_2: ObjectId('66e966904cd797f4c3c73c04'),
+    altura: 1.5,
+    peso: 40.5,
+    habilidades: [ { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c32') } ],
+    estatisticas_base: {
+      hp: 60,
+      ataque: 65,
+      defesa: 60,
+      ataque_especial: 130,
+      defesa_especial: 75,
+      velocidade: 110,
+      total: 500
+    },
+    evolucoes: { primeira: 'Gastly', segunda: 'Haunter', terceira: 'Gengar' },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')
+  },
+  {
+    _id: ObjectId('66e976634cd797f4c3c73c12'),
+    nome: 'Eevee',
+    tipo_1: ObjectId('66e966904cd797f4c3c73c09'),
+    altura: 0.3,
+    peso: 6.5,
+    habilidades: [
+      {
+        habilidade: [
+          ObjectId('66ec0f4d1347ca6bc8c73c33'),
+          ObjectId('66ec0f4d1347ca6bc8c73c34')
+        ]
+      },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c44') }
+    ],
+    estatisticas_base: {
+      hp: 55,
+      ataque: 55,
+      defesa: 50,
+      ataque_especial: 45,
+      defesa_especial: 65,
+      velocidade: 55,
+      total: 325
+    },
+    evolucoes: { primeira: 'Eevee' },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')
+  },
+  {
+    _id: ObjectId('66e976634cd797f4c3c73c13'),
+    nome: 'Mewtwo',
+    tipo_1: ObjectId('66e966904cd797f4c3c73c03'),
+    altura: 2,
+    peso: 122,
+    habilidades: [
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c35') },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c45') }
+    ],
+    estatisticas_base: {
+      hp: 106,
+      ataque: 110,
+      defesa: 90,
+      ataque_especial: 154,
+      defesa_especial: 90,
+      velocidade: 130,
+      total: 680
+    },
+    evolucoes: { primeira: 'Mewtwo' },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bf8')
+  },
+  {
+    _id: ObjectId('66e976634cd797f4c3c73c14'),
+    nome: 'Hitmonchan',
+    tipo_1: ObjectId('66e966904cd797f4c3c73c02'),
+    altura: 1.4,
+    peso: 50.2,
+    habilidades: [
+      {
+        habilidade: [
+          ObjectId('66ec0f4d1347ca6bc8c73c36'),
+          ObjectId('66ec0f4d1347ca6bc8c73c37')
+        ]
+      },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c46') }
+    ],
+    estatisticas_base: {
+      hp: 50,
+      ataque: 105,
+      defesa: 79,
+      ataque_especial: 35,
+      defesa_especial: 110,
+      velocidade: 76,
+      total: 455
+    },
+    evolucoes: { primeira: 'Tyrogue', segunda: 'Hitmonchan' },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bfa')
+  },
+  {
+    _id: ObjectId('66e976634cd797f4c3c73c15'),
+    nome: 'Skarmory',
+    tipo_1: ObjectId('66e966904cd797f4c3c73bfe'),
+    tipo_2: ObjectId('66e966904cd797f4c3c73c00'),
+    altura: 1.7,
+    peso: 50.5,
+    habilidades: [
+      {
+        habilidade: [
+          ObjectId('66ec0f4d1347ca6bc8c73c36'),
+          ObjectId('66ec0f4d1347ca6bc8c73c38')
+        ]
+      },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c47') }
+    ],
+    estatisticas_base: {
+      hp: 65,
+      ataque: 80,
+      defesa: 140,
+      ataque_especial: 40,
+      defesa_especial: 70,
+      velocidade: 70,
+      total: 465
+    },
+    evolucoes: { primeira: 'Skarmory' },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bfa')
+  },
+  {
+    _id: ObjectId('66e976634cd797f4c3c73c16'),
+    nome: 'Scyther',
+    tipo_1: ObjectId('66e966904cd797f4c3c73c01'),
+    tipo_2: ObjectId('66e966904cd797f4c3c73c00'),
+    altura: 1.5,
+    peso: 56,
+    habilidades: [
+      {
+        habilidade: [
+          ObjectId('66ec0f4d1347ca6bc8c73c39'),
+          ObjectId('66ec0f4d1347ca6bc8c73c37')
+        ]
+      },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c48') }
+    ],
+    estatisticas_base: {
+      hp: 70,
+      ataque: 110,
+      defesa: 80,
+      ataque_especial: 55,
+      defesa_especial: 80,
+      velocidade: 105,
+      total: 500
+    },
+    evolucoes: { primeira: 'Scyther', segunda: 'Scizor' },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bf9')
+  },
+  {
+    _id: ObjectId('66e976634cd797f4c3c73c17'),
+    nome: 'Garchomp',
+    tipo_1: ObjectId('66e966904cd797f4c3c73c06'),
+    tipo_2: ObjectId('66e966904cd797f4c3c73bfc'),
+    altura: 1.9,
+    peso: 95,
+    habilidades: [
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c3a') },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c49') }
+    ],
+    estatisticas_base: {
+      hp: 108,
+      ataque: 130,
+      defesa: 95,
+      ataque_especial: 80,
+      defesa_especial: 85,
+      velocidade: 102,
+      total: 600
+    },
+    evolucoes: { primeira: 'Gible', segunda: 'Gabite', terceira: 'Garchomp' },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bfc')
+  },
+  {
+    _id: ObjectId('66e976634cd797f4c3c73c18'),
+    nome: 'Vanilluxe',
+    tipo_1: ObjectId('66e966904cd797f4c3c73bff'),
+    altura: 1.3,
+    peso: 57.5,
+    habilidades: [
+      { habilidade: [ ObjectId('66ec0f4d1347ca6bc8c73c3b') ] },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c47') }
+    ],
+    estatisticas_base: {
+      hp: 71,
+      ataque: 95,
+      defesa: 85,
+      ataque_especial: 110,
+      defesa_especial: 95,
+      velocidade: 79,
+      total: 535
+    },
+    evolucoes: {
+      primeira: 'Vanillite',
+      segunda: 'Vanillish',
+      terceira: 'Vanilluxe'
+    },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bfc')
+  },
+  {
+    _id: ObjectId('66e976634cd797f4c3c73c19'),
+    nome: 'Gardevoir',
+    tipo_1: ObjectId('66e966904cd797f4c3c73c03'),
+    tipo_2: ObjectId('66e966904cd797f4c3c73c08'),
+    altura: 1.6,
+    peso: 48.4,
+    habilidades: [
+      {
+        habilidade: [
+          ObjectId('66ec0f4d1347ca6bc8c73c3c'),
+          ObjectId('66ec0f4d1347ca6bc8c73c3d')
+        ]
+      },
+      { oculta: ObjectId('66ec0f541347ca6bc8c73c4a') }
+    ],
+    estatisticas_base: {
+      hp: 68,
+      ataque: 65,
+      defesa: 65,
+      ataque_especial: 125,
+      defesa_especial: 115,
+      velocidade: 80,
+      total: 518
+    },
+    evolucoes: { primeira: 'Ralts', segunda: 'Kirlia', terceira: 'Gardevoir' },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bfc')
+  },
+  {
+    _id: ObjectId('66e976634cd797f4c3c73c1a'),
+    nome: 'Graveler',
+    tipo_1: ObjectId('66e966904cd797f4c3c73bfd'),
+    tipo_2: ObjectId('66e966904cd797f4c3c73bfc'),
+    altura: 1,
+    peso: 105,
+    habilidades: [
+      {
+        habilidade: [
+          ObjectId('66ec0f4d1347ca6bc8c73c3e'),
+          ObjectId('66ec0f4d1347ca6bc8c73c38')
+        ]
+      },
+      { oculta: ObjectId('66ec0f4d1347ca6bc8c73c3a') }
+    ],
+    estatisticas_base: {
+      hp: 55,
+      ataque: 95,
+      defesa: 115,
+      ataque_especial: 45,
+      defesa_especial: 45,
+      velocidade: 35,
+      total: 390
+    },
+    evolucoes: { primeira: 'Geodude', segunda: 'Graveler', terceira: 'Golem' },
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bf9')
+  }
+]

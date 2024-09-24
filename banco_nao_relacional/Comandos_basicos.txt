@@ -36,7 +36,4 @@ wm>
 
 
 
-cd ../../
-cd "Arquivos de Programas"
-cd mongoDB/Server/7.0/bin
-mongosh
+cd ../../"Arquivos de Programas"/mongoDB/Server/7.0/bin && mongosh

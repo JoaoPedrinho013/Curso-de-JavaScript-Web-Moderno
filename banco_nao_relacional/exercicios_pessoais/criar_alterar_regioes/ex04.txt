@@ -1,0 +1,25 @@
+db.pokemons.aggregate([
+  {
+    $lookup: {
+      from: "regioes",
+      localField: "regiao_origem",
+      foreignField: "_id",
+      as: "regiao"
+    }
+  },
+  {
+        $unwind: "$regiao"
+    },
+  {
+        $group: {
+            _id: "$regiao",  // Agrupa pelo nome do tipo
+            pokemons: { $push: "$nome" } 
+        }
+    },
+  {
+    $project: {
+      "_id.nome": 1,
+      "pokemons": 1
+    }
+  }
+])

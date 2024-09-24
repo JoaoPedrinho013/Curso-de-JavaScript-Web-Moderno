@@ -1,0 +1,79 @@
+[
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c2e'), nome: 'Blaze' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c2f'), nome: 'Overgrow' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c30'), nome: 'Torrent' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c31'), nome: 'Static' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c32'), nome: 'Cursed Body' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c33'), nome: 'Run Away' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c34'), nome: 'Adaptability' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c35'), nome: 'Pressure' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c36'), nome: 'Keen Eye' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c37'), nome: 'Iron Fist' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c38'), nome: 'Sturdy' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c39'), nome: 'Technician' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c3a'), nome: 'Sand Veil' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c3b'), nome: 'Snow Warning' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c3c'), nome: 'Synchronize' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c3d'), nome: 'Trace' },
+  { _id: ObjectId('66ec0f4d1347ca6bc8c73c3e'), nome: 'Rock Head' },
+  {
+    _id: ObjectId('66ec0f541347ca6bc8c73c3f'),
+    nome: 'Solar Power',
+    oculta: true
+  },
+  {
+    _id: ObjectId('66ec0f541347ca6bc8c73c40'),
+    nome: 'Chlorophyll',
+    oculta: true
+  },
+  {
+    _id: ObjectId('66ec0f541347ca6bc8c73c41'),
+    nome: 'Rain Dish',
+    oculta: true
+  },
+  {
+    _id: ObjectId('66ec0f541347ca6bc8c73c42'),
+    nome: 'Protean',
+    oculta: true
+  },
+  {
+    _id: ObjectId('66ec0f541347ca6bc8c73c43'),
+    nome: 'Lightning Rod',
+    oculta: true
+  },
+  {
+    _id: ObjectId('66ec0f541347ca6bc8c73c44'),
+    nome: 'Anticipation',
+    oculta: true
+  },
+  {
+    _id: ObjectId('66ec0f541347ca6bc8c73c45'),
+    nome: 'Unnerve',
+    oculta: true
+  },
+  {
+    _id: ObjectId('66ec0f541347ca6bc8c73c46'),
+    nome: 'Inner Focus',
+    oculta: true
+  },
+  {
+    _id: ObjectId('66ec0f541347ca6bc8c73c47'),
+    nome: 'Weak Armor',
+    oculta: true
+  },
+  {
+    _id: ObjectId('66ec0f541347ca6bc8c73c48'),
+    nome: 'Steadfast',
+    oculta: true
+  },
+  {
+    _id: ObjectId('66ec0f541347ca6bc8c73c49'),
+    nome: 'Rough Skin',
+    oculta: true
+  },
+  {
+    _id: ObjectId('66ec0f541347ca6bc8c73c4a'),
+    nome: 'Telepathy',
+    oculta: true
+  }
+]

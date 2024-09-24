@@ -1,0 +1,110 @@
+[
+  {
+    _id: ObjectId('66e966904cd797f4c3c73bf8'),
+    nome: 'Fire',
+    vantagens: [ 'Grass', 'Ice', 'Steel', 'Bug' ],
+    fraquezas: [ 'Water', 'Ground', 'Rock' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73bf9'),
+    nome: 'Water',
+    vantagens: [ 'Fire', 'Rock', 'Ground' ],
+    fraquezas: [ 'Electric', 'Grass' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73bfa'),
+    nome: 'Grass',
+    vantagens: [ 'Water', 'Rock', 'Ground' ],
+    fraquezas: [ 'Fire', 'Ice', 'Flying', 'Poison', 'Bug' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73bfb'),
+    nome: 'Electric',
+    vantagens: [ 'Water', 'Flying' ],
+    fraquezas: [ 'Ground' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73bfc'),
+    nome: 'Ground',
+    vantagens: [ 'Fire', 'Electric', 'Poison' ],
+    fraquezas: [ 'Water', 'Ice', 'Grass' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73bfd'),
+    nome: 'Rock',
+    vantagens: [ 'Fire', 'Ice', 'Flying' ],
+    fraquezas: [ 'Water', 'Grass', 'Fighting', 'Ground', 'Steel' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73bfe'),
+    nome: 'Steel',
+    vantagens: [ 'Ice', 'Rock', 'Fairy' ],
+    fraquezas: [ 'Fire', 'Fighting', 'Ground' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73bff'),
+    nome: 'Ice',
+    vantagens: [ 'Grass', 'Ground', 'Flying', 'Dragon' ],
+    fraquezas: [ 'Fire', 'Fighting', 'Rock', 'Steel' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73c00'),
+    nome: 'Flying',
+    vantagens: [ 'Grass', 'Fighting', 'Bug' ],
+    fraquezas: [ 'Electric', 'Ice', 'Rock' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73c01'),
+    nome: 'Bug',
+    vantagens: [ 'Grass', 'Psychic', 'Dark' ],
+    fraquezas: [ 'Fire', 'Flying' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73c02'),
+    nome: 'Fighting',
+    vantagens: [ 'Normal', 'Rock', 'Dark', 'Steel' ],
+    fraquezas: [ 'Flying', 'Psychic', 'Fairy' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73c03'),
+    nome: 'Psychic',
+    vantagens: [ 'Fighting', 'Poison' ],
+    fraquezas: [ 'Bug', 'Ghost', 'Dark' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73c04'),
+    nome: 'Poison',
+    vantagens: [ 'Grass', 'Fairy' ],
+    fraquezas: [ 'Ground', 'Psychic' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73c05'),
+    nome: 'Ghost',
+    vantagens: [ 'Psychic', 'Ghost' ],
+    fraquezas: [ 'Ghost', 'Dark' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73c06'),
+    nome: 'Dragon',
+    vantagens: [ 'Dragon' ],
+    fraquezas: [ 'Ice', 'Dragon', 'Fairy' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73c07'),
+    nome: 'Dark',
+    vantagens: [ 'Psychic', 'Ghost' ],
+    fraquezas: [ 'Fighting', 'Bug', 'Fairy' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73c08'),
+    nome: 'Fairy',
+    vantagens: [ 'Fighting', 'Dragon', 'Dark' ],
+    fraquezas: [ 'Poison', 'Steel' ]
+  },
+  {
+    _id: ObjectId('66e966904cd797f4c3c73c09'),
+    nome: 'Normal',
+    vantagens: [],
+    fraquezas: [ 'Fighting' ]
+  }
+]

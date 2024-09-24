@@ -1,0 +1,7 @@
+db.treinadores.update({nome: "Azien"}, {$set: {cidade_origem: ObjectId('66f15bb4ada737acb1c73bfc')} });
+
+db.treinadores.update({nome: "Lightyear"}, {$set: {cidade_origem: ObjectId('66f15bb4ada737acb1c73bf8')} });
+
+db.treinadores.update({nome: "Kadu"}, {$set: {cidade_origem: ObjectId('66f15bb4ada737acb1c73bf9')} });
+
+db.treinadores.update({nome: "Rich"}, {$set: {cidade_origem: ObjectId('66f15bb4ada737acb1c73bfd')} });
