@@ -1,0 +1,9 @@
+db.pokemons.aggregate([
+    {
+        $project: {
+            _id: 0,
+            nome: 1,
+            numero_de_habilidades: { $size: "$habilidades" }
+        }
+    }
+]).pretty();

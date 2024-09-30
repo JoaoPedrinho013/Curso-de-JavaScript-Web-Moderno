@@ -1,3 +1,4 @@
+Pokedex> db.pokemons.find().pretty()
 [
   {
     _id: ObjectId('66e969c04cd797f4c3c73c0a'),
@@ -291,7 +292,7 @@
       total: 600
     },
     evolucoes: { primeira: 'Gible', segunda: 'Gabite', terceira: 'Garchomp' },
-    regiao_origem: ObjectId('66f15bb4ada737acb1c73bfc')
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bfb')
   },
   {
     _id: ObjectId('66e976634cd797f4c3c73c18'),
@@ -345,7 +346,7 @@
       total: 518
     },
     evolucoes: { primeira: 'Ralts', segunda: 'Kirlia', terceira: 'Gardevoir' },
-    regiao_origem: ObjectId('66f15bb4ada737acb1c73bfc')
+    regiao_origem: ObjectId('66f15bb4ada737acb1c73bfb')
   },
   {
     _id: ObjectId('66e976634cd797f4c3c73c1a'),

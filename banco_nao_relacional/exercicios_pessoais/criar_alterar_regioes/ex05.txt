@@ -1,0 +1,81 @@
+db.pokemons.aggregate([
+  {
+    $lookup: {
+      from: 'tipos',
+      localField: 'tipo_1',
+      foreignField: '_id',
+      as: 'tipoPokemon'
+    }
+  },
+  {
+    $unwind: {
+      path: '$tipoPokemon'
+    }
+  },
+  {
+    $lookup: {
+      from: 'pokemons',
+      let: { tipoVantagem: '$tipoPokemon.vantagens' },
+      pipeline: [
+        {
+          $lookup: {
+            from: 'tipos',
+            localField: 'tipo_1',
+            foreignField: '_id',
+            as: 'tipoOponente'
+          }
+        },
+        {
+          $unwind: {
+            path: '$tipoOponente'
+          }
+        },
+        {
+          $lookup: {
+            from: 'tipos',
+            localField: 'tipo_2',
+            foreignField: '_id',
+            as: 'tipoOponente2'
+          }
+        },
+        {
+          $unwind: {
+            path: '$tipoOponente2',
+            preserveNullAndEmptyArrays: true
+          }
+        },
+        {
+          $match: {
+            $expr: {
+              $or: [
+                { $in: ['$tipoOponente.nome', '$$tipoVantagem'] },
+                { $and: [
+                    { $ne: ['$tipoOponente2', null] }, 
+                    { $in: ['$tipoOponente2.nome', '$$tipoVantagem'] }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          $project: {
+            _id: 0,
+            nome: 1,
+            'tipoOponente.nome': 1,
+            'tipoOponente2.nome': 1
+          }
+        }
+      ],
+      as: 'pokemonsVantagem'
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      nome: 1,
+      'tipoPokemon.nome': 1,
+      pokemonsVantagem: 1
+    }
+  }
+]).toArray();

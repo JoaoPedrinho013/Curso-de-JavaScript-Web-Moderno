@@ -1,0 +1,118 @@
+db.pokemons.aggregate([
+    {
+        $lookup: {
+            from: "habilidades",
+            localField: "habilidades.habilidade",
+            foreignField: "_id",
+            as: "habilidadeDetalhes"
+        }
+    },
+    {
+        $lookup: {
+            from: "habilidades",
+            localField: "habilidades.oculta",
+            foreignField: "_id",
+            as: "ocultaDetalhes"
+        }
+    },
+    {
+        $lookup: {
+            from: "tipos",
+            localField: "tipo_1",
+            foreignField: "_id",
+            as: "tipo_1_info"
+        }
+    },
+    {
+        $lookup: {
+            from: "tipos",
+            localField: "tipo_2",
+            foreignField: "_id",
+            as: "tipo_2_info"
+        }
+    },
+    {
+        $match: {
+            $or: [
+                {
+                    "tipo_2_info.nome": "Ground",
+                    "habilidadeDetalhes.nome": "Sand Veil"
+                },
+                {
+                    "tipo_2_info.nome": "Ground",
+                    "ocultaDetalhes.nome": "Sand Veil"
+                }
+            ]
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            nome: 1,
+            "tipo_1_info.nome": 1,
+            "tipo_2_info.nome": 1,
+            "habilidadeDetalhes.nome": 1,
+            "ocultaDetalhes.nome": 1
+        }
+    }
+]).pretty();
+
+
+db.pokemons.aggregate([
+    {
+        $lookup: {
+            from: "habilidades",
+            localField: "habilidades.habilidade",
+            foreignField: "_id",
+            as: "habilidadeDetalhes"
+        }
+    },
+    {
+        $lookup: {
+            from: "habilidades",
+            localField: "habilidades.oculta",
+            foreignField: "_id",
+            as: "ocultaDetalhes"
+        }
+    },
+    {
+        $lookup: {
+            from: "tipos",
+            localField: "tipo_1",
+            foreignField: "_id",
+            as: "tipo_1_info"
+        }
+    },
+    {
+        $lookup: {
+            from: "tipos",
+            localField: "tipo_2",
+            foreignField: "_id",
+            as: "tipo_2_info"
+        }
+    },
+    {
+        $match: {
+            $or: [
+                {
+                    "tipo_1_info.nome": "Fighting",
+                    "habilidadeDetalhes.nome": "Keen Eye"
+                },
+                {
+                    "tipo_2_info.nome": "Flying",
+                    "habilidadeDetalhes.nome": "Keen Eye"
+                }
+            ]
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            nome: 1,
+            "tipo_1_info.nome": 1,
+            "tipo_2_info.nome": 1,
+            "habilidadeDetalhes.nome": 1,
+            "ocultaDetalhes.nome": 1
+        }
+    }
+]).pretty();
