@@ -1,0 +1,38 @@
+db.pokemons.aggregate([
+ {
+    $match: {
+        $and: [
+            {"estatisticas_base.ataque": {$gt: 80} },
+            {"estatisticas_base.defesa": {$gt: 70} }
+        ]
+    
+     }
+ }, 
+ {
+    $project: {
+        _id: 0,
+        nome: 1,
+        "estatisticas_base.ataque": 1,
+        "estatisticas_base.defesa": 1
+    }
+ }
+]);
+
+
+
+db.pokemons.aggregate([
+ {
+    $match: {
+            "estatisticas_base.ataque": {$gt: 80},
+            "estatisticas_base.defesa": {$gt: 70} 
+     }
+ }, 
+ {
+    $project: {
+        _id: 0,
+        nome: 1,
+        "estatisticas_base.ataque": 1,
+        "estatisticas_base.defesa": 1
+    }
+ }
+]);

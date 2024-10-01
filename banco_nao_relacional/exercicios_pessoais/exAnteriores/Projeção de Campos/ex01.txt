@@ -1,9 +1,35 @@
 db.pokemons.aggregate([
+  {
+    $match: {
+      $expr: {
+        $gte: [{ $size: "$habilidades" }, 3]
+      }
+    }
+  }
+  ,
     {
         $project: {
             _id: 0,
             nome: 1,
-            numero_de_habilidades: { $size: "$habilidades" }
+            habilidades: 1
+        }
+    }
+])
+
+
+
+
+db.pokemons.aggregate([
+    {
+        $match: {
+            $expr: { $gt: [{ $size: "$habilidades" }, 2] }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            nome: 1,
+            habilidades: 1
         }
     }
 ]).pretty();

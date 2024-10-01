@@ -1,4 +1,3 @@
-Pokedex> db.pokemons.find().pretty()
 [
   {
     _id: ObjectId('66e969c04cd797f4c3c73c0a'),
@@ -146,12 +145,8 @@ Pokedex> db.pokemons.find().pretty()
     altura: 0.3,
     peso: 6.5,
     habilidades: [
-      {
-        habilidade: [
-          ObjectId('66ec0f4d1347ca6bc8c73c33'),
-          ObjectId('66ec0f4d1347ca6bc8c73c34')
-        ]
-      },
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c33') },
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c34') },
       { oculta: ObjectId('66ec0f541347ca6bc8c73c44') }
     ],
     estatisticas_base: {
@@ -195,12 +190,8 @@ Pokedex> db.pokemons.find().pretty()
     altura: 1.4,
     peso: 50.2,
     habilidades: [
-      {
-        habilidade: [
-          ObjectId('66ec0f4d1347ca6bc8c73c36'),
-          ObjectId('66ec0f4d1347ca6bc8c73c37')
-        ]
-      },
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c36') },
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c37') },
       { oculta: ObjectId('66ec0f541347ca6bc8c73c46') }
     ],
     estatisticas_base: {
@@ -328,12 +319,8 @@ Pokedex> db.pokemons.find().pretty()
     altura: 1.6,
     peso: 48.4,
     habilidades: [
-      {
-        habilidade: [
-          ObjectId('66ec0f4d1347ca6bc8c73c3c'),
-          ObjectId('66ec0f4d1347ca6bc8c73c3d')
-        ]
-      },
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c3c') },
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c3d') },
       { oculta: ObjectId('66ec0f541347ca6bc8c73c4a') }
     ],
     estatisticas_base: {
@@ -356,12 +343,8 @@ Pokedex> db.pokemons.find().pretty()
     altura: 1,
     peso: 105,
     habilidades: [
-      {
-        habilidade: [
-          ObjectId('66ec0f4d1347ca6bc8c73c3e'),
-          ObjectId('66ec0f4d1347ca6bc8c73c38')
-        ]
-      },
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c3e') },
+      { habilidade: ObjectId('66ec0f4d1347ca6bc8c73c38') },
       { oculta: ObjectId('66ec0f4d1347ca6bc8c73c3a') }
     ],
     estatisticas_base: {

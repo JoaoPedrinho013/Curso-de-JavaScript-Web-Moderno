@@ -1,0 +1,33 @@
+db.pokemons.aggregate([
+ {
+    $match: {
+        tipo_2: null
+    
+     }
+ }, 
+ {
+    $project: {
+        _id: 0,
+        nome: 1,
+        tipo_1: 1,
+        tipo_2: 1
+    }
+ }
+]);
+
+
+db.pokemons.aggregate([
+  {
+    $match: {
+      tipo_2: { $exists: false }
+    }
+  }, 
+  {
+    $project: {
+      _id: 0,
+      nome: 1,
+      tipo_1: 1,
+      tipo_2: 1
+    }
+  }
+]);
