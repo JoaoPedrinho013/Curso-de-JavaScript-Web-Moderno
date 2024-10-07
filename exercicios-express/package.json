@@ -5,12 +5,23 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon",
-    "production": "pm2 start index.js --name appx-backend"
+    "production": "pm2 start index.js --name appx-backend",
+    "start_ex1": "nodemon exercicios_express_gtp/exe_1.js",
+    "start_ex2": "nodemon exercicios_express_gtp/exe_2.js",
+    "start_ex3": "nodemon exercicios_express_gtp/exe_3.js",
+    "start_ex4": "nodemon exercicios_express_gtp/exe_4.js",
+    "start_ex5": "nodemon exercicios_express_gtp/exe_5.js",
+    "start_ex6": "nodemon exercicios_express_gtp/exe_6.js",
+    "start_ex7": "nodemon exercicios_express_gtp/exe_7.js",
+    "start_ex8": "nodemon exercicios_express_gtp/exe_8.js",
+    "start_ex9": "nodemon exercicios_express_gtp/exe_9.js",
+    "start_ex10": "nodemon exercicios_express_gtp/exe_10.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.3",
     "express": "4.16.3",
     "pm2": "5.4.2"
   },

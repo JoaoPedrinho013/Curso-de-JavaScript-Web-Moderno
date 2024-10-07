@@ -1,0 +1,35 @@
+Exercício 1: Criar uma Rota GET
+Crie uma nova rota GET em /produtos que retorne uma lista de produtos em formato JSON. Os produtos devem ser objetos com id, nome e preço.
+
+Exercício 2: Criar uma Rota POST
+Implemente uma rota POST em /produtos que receba dados do corpo da requisição (nome e preço de um produto) e retorne um objeto que inclua um id gerado automaticamente.
+
+Exercício 3: Middleware de Logging
+Crie um middleware que logue o método e a URL de cada requisição recebida. O middleware deve ser adicionado antes de todas as rotas.
+
+Exercício 4: Rota com Parâmetro
+Adicione uma rota GET em /produtos/:id que retorne os detalhes de um produto específico com base no id fornecido na URL. Retorne uma mensagem se o produto não for encontrado.
+
+Exercício 5: Rota de Atualização
+Implemente uma rota PUT em /produtos/:id que permita atualizar o nome e o preço de um produto existente. Retorne o produto atualizado.
+
+Exercício 6: Rota de Exclusão
+Crie uma rota DELETE em /produtos/:id que exclua um produto com base no id fornecido na URL. Retorne uma mensagem confirmando a exclusão.
+
+Exercício 7: Usando Query Parameters
+Adicione uma rota GET em /produtos/filtrar que permita filtrar produtos com base em um parâmetro de query precoMin e precoMax. Retorne apenas os produtos dentro desse intervalo.
+
+Exercício 8: Middleware de Erro
+Implemente um middleware de tratamento de erros que capture erros em qualquer parte do aplicativo e retorne uma resposta JSON com um código de status apropriado e uma mensagem de erro.
+
+Exercício 9: Integrando com um Banco de Dados Simulado
+Simule uma integração com um banco de dados usando um array para armazenar produtos. Implemente as rotas de CRUD (criar, ler, atualizar, excluir) usando esse array como armazenamento.
+
+Exercício 10: Validando Dados de Entrada
+Adicione validação para a rota POST /produtos. Se o nome ou o preço do produto estiver faltando ou inválido, retorne um erro apropriado. Utilize um middleware separado para fazer essa validação.
+
+Sugestões de Implementação
+Utilize body-parser para lidar com dados de entrada em JSON.
+Considere usar um array em memória para armazenar produtos durante os exercícios, e assim facilitar o teste das rotas.
+Teste cada rota usando ferramentas como Postman ou Insomnia.
+Esses exercícios devem ajudá-lo a aprofundar seu conhecimento em Express e a entender melhor como construir uma API RESTful. Se precisar de ajuda em algum exercício específico, é só avisar!
