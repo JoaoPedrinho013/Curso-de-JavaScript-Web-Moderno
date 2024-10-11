@@ -1,25 +1,65 @@
-const express = require('express');
-const app = express();
+const express = require('express')
+const app = express()
+const bodyParser = require('body-parser')
 
-// Middleware para capturar erros
-app.use((err, req, res, next) => {
-    console.error(err.stack); // Log do erro para fins de depuração
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 
-    const statusCode = err.status || 500; // Define o status do erro (padrão 500 para erros internos do servidor)
-    const message = err.message || 'Ocorreu um erro no servidor'; // Define a mensagem de erro
+const produtos = [
+    { id: 1, nome: 'Produto 1', preco: 10.00 }
+]
+app.get('/produtos', (req,res, next) => {
+    //pegar o corpo da req 
+    const produto = req.body
+    //criar na lista produtos
+    produtos.push(produto)
+    res.send(produtos)
+    next()
+})
 
-    res.status(statusCode).json({
-        error: true,
-        message: message
+app.post('/produtos', (req,res,next) => {
+    //ler a lista
+    res.send(produtos)
+    next()
+})
+
+app.put('/produtos/:id', (req,res,next) => {
+    const {id} = req.params
+    const {nome, preco} = req.body
+    const produto = produtos.find(p => p.id === parseInt(id))
+
+    if(!produto){
+        res.status(404).json({Error: "Produto não encontrado!"})
+    }
+    if(nome){
+        produto.nome = nome
+    }
+    if(preco){
+        produto.preco = preco
+    } 
+    res.json(produtos)
+    next()
+})
+
+app.delete('/produtos/:id', (req, res,next) => {
+    const { id } = req.params;
+    const produtoIndex = produtos.findIndex(p => p.id === parseInt(id));
+
+    if (produtoIndex === -1) {
+        return res.status(404).json({ Error: "Produto não encontrado!" });
+    }
+
+    const produtoRemovido = produtos.splice(produtoIndex, 1);
+
+    console.log(produtoRemovido);
+    res.send({
+        mensagem: 'Produto excluído com sucesso.',
+        produto: produtoRemovido[0]  // Produto removido é retornado
     });
+    next()
 });
 
-// Exemplo de rota que pode gerar um erro
-app.get('/erro', (req, res, next) => {
-    const error = new Error('Algo deu errado!');
-    error.status = 400; // Status específico (ex: 400 Bad Request)
-    next(error); // Passa o erro para o middleware de tratamento de erros
-});
+
 
 // Iniciando o servidor
 app.listen(3000, () => {
